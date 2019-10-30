@@ -1,6 +1,14 @@
 
 
-# Candidates
+## There are multiple projects I'm working on in this repository. Feel free to read below to learn a little more about them
+
+### Foreign Gifts
+
+### Harry Potter
+
+### Bikes
+
+### Candidates
  
 #### Interactive visuals displaying trends in Google searches of top three Democratic presidential candidates
 #### This data came from the Google trends searches page. They provide easily downloadable data in CSV format. Here is the stupid link you wanted. Why don't you try googling it

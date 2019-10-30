@@ -1,0 +1,37 @@
+{	
+	"fonts": [
+        {
+            "aifont": "OpenSans-CondensedBold",
+            "family": "Open Sans Condensed",
+            "weight": "700",
+            "style": ""
+        },
+        {
+          "aifont": "OpenSans-Italic",
+          "family": "Open Sans",
+          "weight": "400",
+          "style": "italic"
+        },
+        {
+          "aifont": "OpenSans",
+          "family": "Open Sans",
+          "weight": "400",
+          "style": ""
+        },
+        
+        {
+          "aifont": "OpenSans-Light",
+          "family": "Open Sans",
+          "weight": "300",
+          "style": ""
+        },
+        {
+          "aifont": "DINCondensed-Bold",
+          "family": "Open Sans Condensed",
+          "weight": "700",
+          "style": ""
+      }
+    ]
+}
+
+

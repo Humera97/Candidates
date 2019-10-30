@@ -1,0 +1,30 @@
+---
+headline: "Bike Accidents in NYC"
+subhead: "It's a work in progress right now"
+published_date: "October 2019"
+author:
+    name: "Humera Lodhi"
+    url: "http://humeralodhi.com/"
+analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+<p><a href = 'index.hbs'>Home</a></p>
+<p><a href = 'foreigngifts.hbs'>Foreign gifts to U.S. Colleges</a></p>
+<p><a href = 'harrypotter.hbs'>Harry Potter</a></p>
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+
+{{> story/bike }}
+
+
+<!-- 
+  Charts are exactly the same.
+-->
+

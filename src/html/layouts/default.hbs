@@ -2,13 +2,15 @@
 <html lang='en'>
 <head>
   <link rel="stylesheet" href="styles/style.css">
+  
   {{> base/meta}}
   {{> base/fonts }}
   {{> base/analytics }}
+  {{> base/head }}
 </head>
 <body>
   <!-- The headline area pulls most of its content from data/meta.json -->
-  
+  {{> base/navbar }}
   {{> base/headline }}
 
   <main id='content'>

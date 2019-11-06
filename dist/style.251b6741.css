@@ -26,8 +26,8 @@ img {
     color: black;
 }
 .gift-theme {
-    background-color: #7EABA0;
-    color: #EDF7F4;
+    background-color: #F8F9F8;
+    color: #56605D;
     /*;*/
 }
 .navy-theme {
@@ -131,7 +131,7 @@ h3.section-head {
 p.note {
     font-size:0.85rem;
 }
-.link { color: white; }
+.link { color: lightgray; }
 
 h4 {
     font-size: 2rem;

@@ -32,6 +32,7 @@
   <link rel="canonical" href="">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
   <script>
   
   </script>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -67,104 +68,131 @@
     </div>
   </nav>  <div class="header">
       <p class="kicker"></p>
-      <h1 class="headline"></h1>
+      <h1 class="headline">The Education Department investigates influence of foreign funds on U.S. Universities</h1>
       <h2 class="subhead"></h2>
       <p class="byline">
-              
+              <a class="link" href="http://humeralodhi.com/">Humera Lodhi</a>
       </p>
-      <p class="date">Published </p>
+      <p class="date">Published October 2019</p>
   </div>
 
   <main id="content">
 
-    <!DOCTYPE html>
-    <html>
-    <div class="flex-container">
-    <head>
-    
-    	<title>Your Map</title>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    	<!-- 
-    THESE ARE CALLS TO DIFFERENT EXTERNAL FILES
-    MAPBOX HAS A JAVASCRIPT LIBRARY THAT YOU NEED
-    THE NEXT IS A CSS FILE FOR THE MAP
-    AND THE FINAL ONE IS THE LIBRARY FOR JQUERY, WHICH I USE FOR THE PULLDOWN MENU.
-     -->
-    
-    	<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script>
-      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css" rel="stylesheet">
-    	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    	<!-- 
-    THESE ARE CSS STYLES WHAT YOU SHOULD FREELY PLAY WITH
-    THE STYLES THAT BEGIN WITH # RELATE TO IDS, 
-    THE ONES THAT BEGIN WITH . RELATE TO CLASSES
-    WHEN YOU GOT EVERYTHING WORKING YOU CAN PLAY WITH THESE AND ADD TO THESE 
-    TO MAKE YOUR FONTS AND LAYOUTS NICE AND LOVELY
-     -->
-    
-    	<style>body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; left: 100}</style>
-    
-    	
-    
-    </head>
-    <!-- THE BODY OF THE HTML BEGINS HERE -->
-    
-    <body>
-    
-    	<!-- 
-    THE DIVS BELOW ARE SUPER IMPORTANT:
-    THEY ARE WHERE THE MAP WILL GO, AND YOUR ARTICLE TEXT WILL GO
-    YOU WILL CERTAINLY WANT TO STYLE THESE, BOTH THEIR PLACEMENT AND CONTENT 
-    THE MAP SHOULD BE EMPTY.
-    WHATEVER INTRODUCTORY TEXT YOU WANT CAN GO INTO THE ARTICLEPLACE DIV
-     -->
-    
-    
-    	<div id="map">
-    		</div>
-    		<!-- <div id='color-scale'>
-    			<p>Rating</p>
-    			<div><span style='background-color: #ece2f0'></span>1</div>
-    			<div><span style='background-color: #a6bddb'></span>5</div>
-    			<div><span style='background-color: #1c9099'></span>10</div>
-    		</div> -->
-    
-    	</body></div>
-    	<!--<div id='articlePlace'> all of your text can go here.</div> -->
-    	<!-- 
-    INSIDE THE MAP DIV  ARE TWO THINGS, THE DROP-DOWN MENU AND THE RATING LEGEND
-    
-    
-    DROP-DOWN MENU: THE ID select–menu IS USED BY THE JQUERY FUNCTION WAY DOWN AT THE BOTTOM
-    THIS HTML SETS UP THE PULLDOWN MENU
-    IF YOU HAVE MULTIPLE GROUPS THE JQUERY AT THE BOTTOM 
-    WILL UPDATE THE SELECT MENU FOR YOU
-    
-    RATING: THIS IS A NEW INNOVATION BY SOMA. I WILL GO OVER IT NEXT WEEK, 
-    IT SHOULD BE THE LAST THING YOU DEAL WITH. 
-    IT IS THERE FOR YOU TO USE THE NEW 'RATING' PROPERTY
-    TO AUTOMATICALLY SET A COLOR RANGE. 
-    IT IS NOT WORKING IN THIS EXAMPLE.
-     -->
-    
-    	<!-- 
-    THIS IS WHERE THE BROWSER LOADS IN YOUR GEOJSON INFORMATION
-    MAKING IT A JAVASCRIPT FILE .js, RATHER THAN A GEOJSON FILE
-    ALLOWS YOU TO LOAD IT LOCALLY WITHOUT DEALING WITH SETTING UP SERVERS ON YOUR MACHINE.
-     -->
-    
-    	<script type="text/javascript" src="/geo-data.8def0f00.json"></script>
-    
-    	<!-- 
-    HERE BEGINS ALL THE SCRIPT THAT SETS UP THE MAP 
-    ALL THE COMMENTS FROM HERE WE'LL BE IN JAVASCRIPT COMMENTS //
-     -->
-    
-    	<script>function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+     <body class="gift-theme"></body>
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+
+<div class="story-body">
+  <p>U.S. colleges and universities are facing pressure about the influence of foreign countries on their institutions as part of the Trump Adminstration's larger immigration and foreign policies. This has presented itself in a number of ways-- increased restrictions on student visas annd more visa denials for foreign students to name a few. At the start of this year, a Palestinian student addmitted to Harvard was denied entry to the country after a Customs and Border Agents. Universities have responded in a number of ways including increased screenings for foreign nationals.  </p>
+  <p> Under this broader push, the Education Department has increased scrutiny into foreign financial donations to colleges and universities. In particular, the Education Department is looking into money given by entities in Qatar, China, Russia, and Saudia Arabia. So which countries are really giving money to U.S. colleges. And what type of influence do they have?  </p>
+  <h4> FINANCIAL GIFTS BY COUNTRY</h4>
+  <p1>THE TOTAL AMOUNT OF MONEY GIVEN BY EACH COUNTRY TO U.S. COLLEGES AND UNIVERSITIES BETWEEN 2012 & 2018</p1>
+  <!-- If you use images, the path is just images/___ -->
+  
+  <p></p>
+</div>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Your Map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 
+THESE ARE CALLS TO DIFFERENT EXTERNAL FILES
+MAPBOX HAS A JAVASCRIPT LIBRARY THAT YOU NEED
+THE NEXT IS A CSS FILE FOR THE MAP
+AND THE FINAL ONE IS THE LIBRARY FOR JQUERY, WHICH I USE FOR THE PULLDOWN MENU.
+ -->
+
+	<script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/5.1.5/turf.min.js"></script>
+	<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- 
+THESE ARE CSS STYLES WHAT YOU SHOULD FREELY PLAY WITH
+THE STYLES THAT BEGIN WITH # RELATE TO IDS, 
+THE ONES THAT BEGIN WITH . RELATE TO CLASSES
+WHEN YOU GOT EVERYTHING WORKING YOU CAN PLAY WITH THESE AND ADD TO THESE 
+TO MAKE YOUR FONTS AND LAYOUTS NICE AND LOVELY
+ -->
+
+	<style>
+	
+		
+
+	
+
+	
+	</style>
+
+</head>
+<!-- THE BODY OF THE HTML BEGINS HERE -->
+
+<body>
+
+	<!-- 
+THE DIVS BELOW ARE SUPER IMPORTANT:
+THEY ARE WHERE THE MAP WILL GO, AND YOUR ARTICLE TEXT WILL GO
+YOU WILL CERTAINLY WANT TO STYLE THESE, BOTH THEIR PLACEMENT AND CONTENT 
+THE MAP SHOULD BE EMPTY.
+WHATEVER INTRODUCTORY TEXT YOU WANT CAN GO INTO THE ARTICLEPLACE DIV
+ -->
+
+
+	<div id="map">
+		
+		</div>
+		<!-- <div id='color-scale'>
+			<p>Rating</p>
+			<div><span style='background-color: #ece2f0'></span>1</div>
+			<div><span style='background-color: #a6bddb'></span>5</div>
+			<div><span style='background-color: #1c9099'></span>10</div>
+		</div> -->
+
+	
+	<!--<div id='articlePlace'> all of your text can go here.</div> -->
+	<!-- 
+INSIDE THE MAP DIV  ARE TWO THINGS, THE DROP-DOWN MENU AND THE RATING LEGEND
+
+
+DROP-DOWN MENU: THE ID select–menu IS USED BY THE JQUERY FUNCTION WAY DOWN AT THE BOTTOM
+THIS HTML SETS UP THE PULLDOWN MENU
+IF YOU HAVE MULTIPLE GROUPS THE JQUERY AT THE BOTTOM 
+WILL UPDATE THE SELECT MENU FOR YOU
+
+RATING: THIS IS A NEW INNOVATION BY SOMA. I WILL GO OVER IT NEXT WEEK, 
+IT SHOULD BE THE LAST THING YOU DEAL WITH. 
+IT IS THERE FOR YOU TO USE THE NEW 'RATING' PROPERTY
+TO AUTOMATICALLY SET A COLOR RANGE. 
+IT IS NOT WORKING IN THIS EXAMPLE.
+ -->
+
+	<!-- 
+THIS IS WHERE THE BROWSER LOADS IN YOUR GEOJSON INFORMATION
+MAKING IT A JAVASCRIPT FILE .js, RATHER THAN A GEOJSON FILE
+ALLOWS YOU TO LOAD IT LOCALLY WITHOUT DEALING WITH SETTING UP SERVERS ON YOUR MACHINE.
+ -->
+
+	<script type="text/javascript" src="/geo-data.8def0f00.json"></script>
+
+	<!-- 
+HERE BEGINS ALL THE SCRIPT THAT SETS UP THE MAP 
+ALL THE COMMENTS FROM HERE WE'LL BE IN JAVASCRIPT COMMENTS //
+ -->
+
+	<script>function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // these seven lines maybe the only lines you need to edit
 // you should put in your own access token
@@ -181,7 +209,7 @@ var map = new mapboxgl.Map({
   // style URL
   center: [-5.9270884, 40.1436456],
   // starting position as [lng, lat]
-  zoom: 1
+  zoom: 1.3
 });
 map.addControl(new mapboxgl.NavigationControl(), 'top-left'); // all of this JavaScript manages what's displayed on hover and click
 
@@ -246,7 +274,7 @@ function drawPopup(e) {
     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
   }
 
-  popup.setLngLat(coordinates).setHTML("<h3>".concat(name, "</h3>\n    \t\t\t\t\t\t\t\t\t<h4>").concat(headline, "</h4>\n    \t\t\t\t\t\t\t\t\t<h5><ul style=\"list-style-type:disc;\">\n      \t\t\t\t\t\t\t\t\t\t\t<li>").concat(list, "</li>\n     \t\t\t\t\t\t\t\t\t\t\t\t<li>").concat(list2, "</li>\n    \t\t\t\t\t\t\t\t\t\t\t</ul>\n    \t\t\t\t\t\t\t\t\t</h5>")).addTo(map);
+  popup.setLngLat(coordinates).setHTML("<h3>".concat(name, "</h3>\n\t\t\t\t\t\t\t\t\t<h4>").concat(headline, "</h4>\n\t\t\t\t\t\t\t\t\t<h5><ul style=\"list-style-type:disc;\">\n  \t\t\t\t\t\t\t\t\t\t\t<li>").concat(list, "</li>\n \t\t\t\t\t\t\t\t\t\t\t\t<li>").concat(list2, "</li>\n\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t</h5>")).addTo(map);
 }
 
 function removePopup(e) {
@@ -293,7 +321,7 @@ map.on('load', function () {
   }); // very important!! this automatically centers the map and zooms it
   //map.fitBounds(turf.bbox(infoData), { padding: 20, linear: true })
 });</script>
-    	<script>// this part is J query / with some mapbox JavaScript
+	<script>// this part is J query / with some mapbox JavaScript
 // it changes what is displayed based on the pulldown menu
 var groupsObj = {};
 $(document).ready(function () {
@@ -313,49 +341,1418 @@ $(document).ready(function () {
     }
   });
 });</script>
-    
-    <script>var map = L.map('canvas', {
+
+<script>var map = L.map('canvas', {
   zoomControl: false
 }).setView([38.82259, -2.8125], 3);
 map.setMaxBounds([[84.67351256610522, -174.0234375], [-58.995311187950925, 223.2421875]]);
 var osmLayer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   noWrap: true
 }).addTo(map);</script>
-    
-    
-    </html></main></body>
-    
-    </html>
-    ---
-headline: "Harry Potter"
-subhead: "It's a work in progress right now"
-published_date: "October 2019"
-author:
-    name: "Humera Lodhi"
-    url: "http://humeralodhi.com/"
-analytics": ""
----
- <body class="gift-theme"></body>
-<!-- 
-  This line means, use default.hbs layout from src/html/layouts/
--->
 
 
+</body>
 
-<!-- 
-  Put some content into an .hbs file inside of /partials, 
-  and you can just throw it in anywhere!
--->
-
-<div class="story-body">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit tincidunt dapibus interdum, dui ligula tincidunt arcu, sed euismod lorem lacus quis metus. Aliquam non feugiat mi. Nam dictum arcu at magna sollicitudin tristique.</p>
-  <p>Quisque commodo, orci a varius rhoncus, diam magna consectetur lectus, tincidunt consectetur lectus ipsum vel leo. Mauris in augue eu ex euismod facilisis ac quis ipsum.</p>
+</html><div class="story-body">
+  <p>The money is broken down into two categories: contracts and monetary gifts. "Monetary gifts" are simply money given to the institution, whereas contracts are money given for a specific purpose (as stipulated by the contract). Universities have contracts with entities for many reasons: American universities will develop branches in other countries, entities will fund institutes within the university focusing on a specific area of study or research, any court-ordered payments would be considered contracts. Monetary gifts are any funds given to the university without a legally-binding agreement-- these can often be money given by individuals or alumni. </p>
+  <p>Looking at the more darkly shaded areas of the map gives a sense of which countries give more money and which countries give less money. The donations from the specific countries being investigated by the Eduaction Department do seem to be giving more money at first glance. But are they giving the most?</p>
   <!-- If you use images, the path is just images/___ -->
   
-  <p>Phasellus lacus lectus, semper ut mollis vitae, fermentum ac massa. Duis pulvinar, lorem non interdum bibendum, sapien tellus volutpat massa, mollis sodales lectus ligula eget ex. Donec hendrerit imperdiet commodo. Fusce ut leo sed purus posuere tempor ut bibendum lectus. Aenean sem purus, euismod ut fringilla ultricies, convallis a nulla.</p>
+  <p></p>
 </div>
+
+
+<!-- Generated by ai2html v0.89.0 - 2019-11-06 14:53 -->
+<!-- ai file: numberof.ai -->
+<style media="screen,print">#g-numberof-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-numberof-box p {
+		margin:0;
+	}
+	.g-aiAbs {
+		position:absolute;
+	}
+	.g-aiImg {
+		display:block;
+		width:100% !important;
+	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.g-aiPointText p { white-space: nowrap; }
+	#g-numberof-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-numberof-medium p {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.001em;
+		text-align:left;
+		color:rgb(44,51,49);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-numberof-medium .g-pstyle0 {
+		font-size:24px;
+		line-height:29px;
+		height:29px;
+		letter-spacing:0em;
+		color:rgb(121,162,148);
+	}
+	#g-numberof-medium .g-pstyle1 {
+		height:14px;
+	}
+	#g-numberof-medium .g-pstyle2 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-medium .g-pstyle3 {
+		font-size:26px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-medium .g-pstyle4 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-medium .g-pstyle5 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-medium .g-pstyle6 {
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-medium .g-pstyle7 {
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-medium .g-pstyle8 {
+		font-family:Open Sans;
+		font-weight:400;
+		font-style:italic;
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-medium .g-cstyle0 {
+		text-transform:uppercase;
+	}
+	#g-numberof-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-numberof-laptop p {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.001em;
+		text-align:left;
+		color:rgb(44,51,49);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-numberof-laptop .g-pstyle0 {
+		font-size:24px;
+		line-height:24px;
+		height:24px;
+		letter-spacing:0em;
+		color:rgb(121,162,148);
+	}
+	#g-numberof-laptop .g-pstyle1 {
+		height:14px;
+	}
+	#g-numberof-laptop .g-pstyle2 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-laptop .g-pstyle3 {
+		font-size:26px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-laptop .g-pstyle4 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-laptop .g-pstyle5 {
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-laptop .g-pstyle6 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-laptop .g-pstyle7 {
+		font-family:Open Sans;
+		font-weight:400;
+		font-style:italic;
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-laptop .g-pstyle8 {
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-laptop .g-cstyle0 {
+		text-transform:uppercase;
+	}
+	#g-numberof-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-numberof-mobile p {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.001em;
+		text-align:left;
+		color:rgb(44,51,49);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-numberof-mobile .g-pstyle0 {
+		font-size:24px;
+		line-height:24px;
+		height:24px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(121,162,148);
+	}
+	#g-numberof-mobile .g-pstyle1 {
+		height:14px;
+		text-align:center;
+	}
+	#g-numberof-mobile .g-pstyle2 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:10px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-mobile .g-pstyle3 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:9px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle4 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:10px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:center;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-mobile .g-pstyle5 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:9px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:center;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle6 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-mobile .g-pstyle7 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:-0.05em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle8 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:6px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle9 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:10px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		color:rgb(121,162,147);
+	}
+	#g-numberof-mobile .g-pstyle10 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:8px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle11 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:7px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.1em;
+		text-align:right;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle12 {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:10px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:-0.075em;
+		text-align:right;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-mobile .g-pstyle13 {
+		font-size:26px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-mobile .g-pstyle14 {
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle15 {
+		font-size:10px;
+		line-height:12px;
+		height:12px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(45,51,49);
+	}
+	#g-numberof-mobile .g-pstyle16 {
+		font-family:Open Sans;
+		font-weight:400;
+		font-style:italic;
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-mobile .g-pstyle17 {
+		font-size:8px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+		color:rgb(191,144,151);
+	}
+	#g-numberof-mobile .g-cstyle0 {
+		text-transform:uppercase;
+	}</style>
+
+<div id="g-numberof-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-numberof-medium" class="g-artboard" style="width:620px; height:450.000000000001px;" data-aspect-ratio="1.378" data-min-width="620">
+		<img id="g-numberof-medium-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-medium.2d8f447f.png">
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.8338%;margin-top:-16.3px;left:3.8073%;width:591px;">
+			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT COLLEGES & UNIVERSITIES</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.2391%;margin-top:-15.1px;left:3.8177%;width:616px;">
+			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but only 161 recieve money from other countries. </p>
+			<p class="g-pstyle1">These are the 10 countries that gave the most money, along with the number of institutions they gave money to.  </p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.4956%;margin-top:-6.7px;left:24.7096%;width:60px;">
+			<p class="g-pstyle2">1 university</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:26.1542%;margin-top:-5.7px;left:23.9026%;margin-left:-24px;width:48px;">
+			<p class="g-pstyle3">]</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.0756%;margin-top:-6.8px;right:85.1155%;width:41px;">
+			<p class="g-pstyle4">CHINA</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.1867%;margin-top:-6.8px;right:38.4419%;width:63px;">
+			<p class="g-pstyle5">$680,273,016</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.1681%;margin-top:-6.3px;right:84.9928%;width:59px;">
+			<p class="g-pstyle6">87 COLLEGES</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.4089%;margin-top:-6.8px;right:85.3876%;width:51px;">
+			<p class="g-pstyle4">ENGLAND</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.7423%;margin-top:-6.8px;right:25.7654%;width:63px;">
+			<p class="g-pstyle5">$936,468,499</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.5013%;margin-top:-6.3px;right:85.3597%;width:29px;">
+			<p class="g-pstyle6">81</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.2977%;margin-top:-6.8px;right:85.3863%;width:47px;">
+			<p class="g-pstyle4">CANADA</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.2979%;margin-top:-6.8px;right:85.4797%;width:29px;">
+			<p class="g-pstyle5">76</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.2979%;margin-top:-6.8px;right:47.6857%;width:63px;">
+			<p class="g-pstyle5">$511,016,461</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.4089%;margin-top:-6.8px;right:85.3815%;width:42px;">
+			<p class="g-pstyle4">JAPAN</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.8533%;margin-top:-6.8px;right:85.4797%;width:29px;">
+			<p class="g-pstyle5">74</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.8533%;margin-top:-6.8px;right:51.4893%;width:63px;">
+			<p class="g-pstyle5">$447,932,424</p>
+		</div>
+		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.8534%;margin-top:-6.8px;right:85.0629%;width:65px;">
+			<p class="g-pstyle4">SWITZERLAND</p>
+		</div>
+		<div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.52%;margin-top:-6.8px;right:53.3059%;width:63px;">
+			<p class="g-pstyle5">$421,080,365</p>
+		</div>
+		<div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.0755%;margin-top:-6.8px;right:85.4798%;width:29px;">
+			<p class="g-pstyle5">63</p>
+		</div>
+		<div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.2977%;margin-top:-6.8px;right:85.4605%;width:65px;">
+			<p class="g-pstyle4">SAUDI ARABIA</p>
+		</div>
+		<div id="g-ai0-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.0755%;margin-top:-6.8px;right:85.4798%;width:29px;">
+			<p class="g-pstyle5">63</p>
+		</div>
+		<div id="g-ai0-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.0755%;margin-top:-6.8px;right:41.367%;width:63px;">
+			<p class="g-pstyle5">$649,971,586</p>
+		</div>
+		<div id="g-ai0-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.6311%;margin-top:-6.8px;right:85.3847%;width:39px;">
+			<p class="g-pstyle4">INDIA</p>
+		</div>
+		<div id="g-ai0-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.1866%;margin-top:-6.8px;right:53.345%;width:63px;">
+			<p class="g-pstyle5">$428,598,388</p>
+		</div>
+		<div id="g-ai0-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.8533%;margin-top:-6.8px;right:85.4799%;width:29px;">
+			<p class="g-pstyle5">46</p>
+		</div>
+		<div id="g-ai0-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.9645%;margin-top:-6.8px;right:85.1637%;width:58px;">
+			<p class="g-pstyle4">HONG KONG</p>
+		</div>
+		<div id="g-ai0-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.2977%;margin-top:-6.8px;right:44.4959%;width:63px;">
+			<p class="g-pstyle5">$583,104,614</p>
+		</div>
+		<div id="g-ai0-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.1866%;margin-top:-6.8px;right:85.4797%;width:29px;">
+			<p class="g-pstyle5">46</p>
+		</div>
+		<div id="g-ai0-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.5201%;margin-top:-6.8px;right:6.7633%;width:68px;">
+			<p class="g-pstyle5">$1,478,676,069</p>
+		</div>
+		<div id="g-ai0-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.2979%;margin-top:-6.8px;right:85.3897%;width:41px;">
+			<p class="g-pstyle4">QATAR</p>
+		</div>
+		<div id="g-ai0-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.2979%;margin-top:-6.8px;right:85.4798%;width:29px;">
+			<p class="g-pstyle5">28</p>
+		</div>
+		<div id="g-ai0-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.409%;margin-top:-6.8px;right:85.4494%;width:52px;">
+			<p class="g-pstyle4">BERMUDA</p>
+		</div>
+		<div id="g-ai0-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6311%;margin-top:-6.8px;right:30.0766%;width:63px;">
+			<p class="g-pstyle5">$812,426,114</p>
+		</div>
+		<div id="g-ai0-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6311%;margin-top:-6.8px;right:85.4799%;width:29px;">
+			<p class="g-pstyle5">17</p>
+		</div>
+		<div id="g-ai0-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.4631%;margin-top:-5.6px;right:0.4273%;width:69px;">
+			<p class="g-pstyle7">Humera lodhi</p>
+		</div>
+		<div id="g-ai0-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.2222%;margin-top:-5.5px;right:0.4828%;width:151px;">
+			<p class="g-pstyle8"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-numberof-laptop" class="g-artboard" style="width:490px; height:443px;" data-aspect-ratio="1.106" data-min-width="490" data-max-width="619">
+		<img id="g-numberof-laptop-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-laptop.0ac1d6d4.png">
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:11.005%;margin-top:-25.8px;left:4.9275%;width:446px;">
+			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT COLLEGES </p>
+			<p class="g-pstyle0">& UNIVERSITIES</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.8298%;margin-top:-22.3px;left:4.9406%;width:457px;">
+			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but only 161 recieve </p>
+			<p class="g-pstyle1">money from other countries. These are the 10 countries that gave the most money, </p>
+			<p class="g-pstyle1">along with the number of institutions they gave money to.  </p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:27.4786%;margin-top:-6.7px;left:29.1081%;width:60px;">
+			<p class="g-pstyle2">1 university</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:30.4049%;margin-top:-5.7px;left:28.0869%;margin-left:-24px;width:48px;">
+			<p class="g-pstyle3">]</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.3724%;margin-top:-6.8px;right:79.6279%;width:41px;">
+			<p class="g-pstyle4">CHINA</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.355%;margin-top:-6.2px;right:31.996%;width:54px;">
+			<p class="g-pstyle5">$680,273,016</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.2722%;margin-top:-6.3px;right:79.4727%;width:59px;">
+			<p class="g-pstyle5">87 COLLEGES</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.2416%;margin-top:-6.8px;right:80.3805%;width:51px;">
+			<p class="g-pstyle4">ENGLAND</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.3528%;margin-top:-6.2px;right:20.4594%;width:54px;">
+			<p class="g-pstyle5">$936,468,499</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.367%;margin-top:-6.3px;right:80.345%;width:29px;">
+			<p class="g-pstyle5">81</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.465%;margin-top:-6.8px;right:80.3787%;width:47px;">
+			<p class="g-pstyle4">CANADA</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.1248%;margin-top:-6.2px;right:42.5917%;width:54px;">
+			<p class="g-pstyle5">$511,016,461</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.4966%;margin-top:-6.8px;right:80.4971%;width:29px;">
+			<p class="g-pstyle6">76</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.6885%;margin-top:-6.8px;right:80.3727%;width:42px;">
+			<p class="g-pstyle4">JAPAN</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.8968%;margin-top:-6.2px;right:45.5265%;width:54px;">
+			<p class="g-pstyle5">$447,932,424</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.9459%;margin-top:-6.8px;right:80.4969%;width:29px;">
+			<p class="g-pstyle6">74</p>
+		</div>
+		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.5576%;margin-top:-6.8px;right:79.7654%;width:65px;">
+			<p class="g-pstyle4">SWITZERLAND</p>
+		</div>
+		<div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.2174%;margin-top:-6.2px;right:47.0926%;width:54px;">
+			<p class="g-pstyle5">$421,080,365</p>
+		</div>
+		<div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.0406%;margin-top:-6.8px;right:80.293%;width:29px;">
+			<p class="g-pstyle6">63</p>
+		</div>
+		<div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.5553%;margin-top:-6.8px;right:79.6562%;width:65px;">
+			<p class="g-pstyle4">SAUDI ARABIA</p>
+		</div>
+		<div id="g-ai1-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.7636%;margin-top:-6.2px;right:36.479%;width:54px;">
+			<p class="g-pstyle5">$649,971,586</p>
+		</div>
+		<div id="g-ai1-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.5869%;margin-top:-6.8px;right:80.293%;width:29px;">
+			<p class="g-pstyle6">63</p>
+		</div>
+		<div id="g-ai1-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.1987%;margin-top:-6.8px;right:80.1728%;width:39px;">
+			<p class="g-pstyle4">INDIA</p>
+		</div>
+		<div id="g-ai1-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.0842%;margin-top:-6.2px;right:46.5183%;width:54px;">
+			<p class="g-pstyle5">$428,598,388</p>
+		</div>
+		<div id="g-ai1-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.1331%;margin-top:-6.8px;right:80.2932%;width:29px;">
+			<p class="g-pstyle6">46</p>
+		</div>
+		<div id="g-ai1-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.1964%;margin-top:-6.8px;right:79.4848%;width:58px;">
+			<p class="g-pstyle4">HONG KONG</p>
+		</div>
+		<div id="g-ai1-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.0819%;margin-top:-6.2px;right:38.7117%;width:54px;">
+			<p class="g-pstyle5">$583,104,614</p>
+		</div>
+		<div id="g-ai1-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.6794%;margin-top:-6.8px;right:79.6805%;width:29px;">
+			<p class="g-pstyle6">46</p>
+		</div>
+		<div id="g-ai1-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.662%;margin-top:-6.2px;right:3.9531%;width:58px;">
+			<p class="g-pstyle5">$1,478,676,069</p>
+		</div>
+		<div id="g-ai1-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9685%;margin-top:-6.8px;right:79.5667%;width:41px;">
+			<p class="g-pstyle4">QATAR</p>
+		</div>
+		<div id="g-ai1-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:88.4514%;margin-top:-6.8px;right:79.6807%;width:29px;">
+			<p class="g-pstyle6">28</p>
+		</div>
+		<div id="g-ai1-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.7405%;margin-top:-6.8px;right:79.4382%;width:52px;">
+			<p class="g-pstyle4">BERMUDA</p>
+		</div>
+		<div id="g-ai1-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.1745%;margin-top:-6.2px;right:23.5957%;width:54px;">
+			<p class="g-pstyle5">$812,426,114</p>
+		</div>
+		<div id="g-ai1-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.9977%;margin-top:-6.8px;right:79.6807%;width:29px;">
+			<p class="g-pstyle6">17</p>
+		</div>
+		<div id="g-ai1-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:98.9842%;margin-top:-5.5px;right:61.0842%;width:151px;">
+			<p class="g-pstyle7"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
+		</div>
+		<div id="g-ai1-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.0032%;margin-top:-5.6px;right:87.4972%;width:77px;">
+			<p class="g-pstyle8">Humera lodhi | </p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-numberof-mobile" class="g-artboard" style="width:375px; height:606.799999999999px;" data-aspect-ratio="0.618" data-min-width="375" data-max-width="489">
+		<img id="g-numberof-mobile-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-mobile.0d1bff3b.png">
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.1879%;margin-top:-25.8px;left:49.6029%;margin-left:-173.5px;width:347px;">
+			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT</p>
+			<p class="g-pstyle0">COLLEGES & UNIVERSITIES</p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.0415%;margin-top:-29.5px;left:47.3198%;margin-left:-182px;width:364px;">
+			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but </p>
+			<p class="g-pstyle1">only 161 recieve money from other countries. These are the 10 </p>
+			<p class="g-pstyle1">countries that gave the most money, along with the number of </p>
+			<p class="g-pstyle1">institutions they gave money to.  </p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.0372%;margin-top:-4.1px;right:18.6805%;width:49px;">
+			<p class="g-pstyle2">QATAR</p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.5001%;margin-top:-4px;right:16.2604%;width:65px;">
+			<p class="g-pstyle3">$1,478,676,069</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.0867%;margin-top:-4.1px;right:71.3682%;width:61px;">
+			<p class="g-pstyle2">ENGLAND</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.5495%;margin-top:-4px;right:71.6698%;width:60px;">
+			<p class="g-pstyle3">$936,468,499</p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:56.7122%;margin-top:-4.1px;left:88.4815%;margin-left:-31.5px;width:63px;">
+			<p class="g-pstyle4">BERMUDA</p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.5047%;margin-top:-4px;left:88.8911%;margin-left:-30.5px;width:61px;">
+			<p class="g-pstyle5">$812,426,114</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.7162%;margin-top:-6.6px;right:82.5208%;width:47px;">
+			<p class="g-pstyle6">CHINA</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.9522%;margin-top:-4.1px;right:40.1844%;width:75px;">
+			<p class="g-pstyle2">SAUDI ARABIA</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.4262%;margin-top:-6px;right:82.6534%;width:65px;">
+			<p class="g-pstyle7">$680,273,016</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.5798%;margin-top:-4px;right:41.9073%;width:60px;">
+			<p class="g-pstyle3">$649,971,586</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.0834%;margin-top:-4.1px;right:26.1391%;width:73px;">
+			<p class="g-pstyle2">HONG KONG</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.4018%;margin-top:-4.1px;right:64.1039%;width:55px;">
+			<p class="g-pstyle2">CANADA</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.5462%;margin-top:-4px;right:25.9698%;width:61px;">
+			<p class="g-pstyle3">$583,104,614</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.6786%;margin-top:-3.9px;right:65.0565%;width:48px;">
+			<p class="g-pstyle8">$511,016,461</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.5441%;margin-top:-4.1px;left:35.9427%;width:45px;">
+			<p class="g-pstyle9">JAPAN</p>
+		</div>
+		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.821%;margin-top:-3.9px;right:57.7115%;width:48px;">
+			<p class="g-pstyle8">$447,932,424</p>
+		</div>
+		<div id="g-ai2-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.7577%;margin-top:-7.6px;right:49.1503%;width:55px;">
+			<p class="g-pstyle2">SWITZER</p>
+			<p class="g-pstyle2">LAND</p>
+		</div>
+		<div id="g-ai2-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.8401%;margin-top:-4.1px;right:35.318%;width:43px;">
+			<p class="g-pstyle2">INDIA</p>
+		</div>
+		<div id="g-ai2-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.1378%;margin-top:-4px;right:33.4578%;width:56px;">
+			<p class="g-pstyle10">$428,598,388</p>
+		</div>
+		<div id="g-ai2-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.6219%;margin-top:-3.9px;right:49.2242%;width:52px;">
+			<p class="g-pstyle11">$421,080,365</p>
+		</div>
+		<div id="g-ai2-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9753%;margin-top:-7.6px;right:89.7536%;width:52px;">
+			<p class="g-pstyle12">1 </p>
+			<p class="g-pstyle12">university</p>
+		</div>
+		<div id="g-ai2-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(-1,0.0078,-0.0078,-1,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(-1,0.0078,-0.0078,-1,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(-1,0.0078,-0.0078,-1,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:88.2818%;margin-top:-5.7px;left:11.4682%;margin-left:-24px;width:48px;">
+			<p class="g-pstyle13">]</p>
+		</div>
+		<div id="g-ai2-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.8675%;margin-top:-11.7px;left:14.7286%;margin-left:-26px;width:52px;">
+			<p class="g-pstyle14">87</p>
+			<p class="g-pstyle14"> COLLEGES</p>
+		</div>
+		<div id="g-ai2-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:31.6096%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">76</p>
+		</div>
+		<div id="g-ai2-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:39.1443%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">74</p>
+		</div>
+		<div id="g-ai2-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:47.1807%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">63</p>
+		</div>
+		<div id="g-ai2-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:54.5388%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">63</p>
+		</div>
+		<div id="g-ai2-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:62.6323%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">46</p>
+		</div>
+		<div id="g-ai2-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2387%;margin-top:-6.8px;left:70.3104%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">46</p>
+		</div>
+		<div id="g-ai2-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:77.9466%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">28</p>
+		</div>
+		<div id="g-ai2-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:85.4729%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle15">17</p>
+		</div>
+		<div id="g-ai2-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.1424%;margin-top:-6.3px;left:23.4365%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle14">81</p>
+		</div>
+		<div id="g-ai2-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.1266%;margin-top:-5.5px;right:0.8753%;width:151px;">
+			<p class="g-pstyle16"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
+		</div>
+		<div id="g-ai2-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.1404%;margin-top:-5.6px;right:35.1216%;width:77px;">
+			<p class="g-pstyle17">Humera lodhi | </p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-11-06 14:53 -->
+<div class="story-body">
+  <p></p>
+  <p>The top 10 countries give anywhere from around $420 million to $1.4 billion dollars to U.S. colleges, and some spread the money out amongs many colleges while others give to only a few institutions. Bermuda, in particular, has given to only 17 universities or colleges. It seemed strange that a relatively small, developing country without much global influence would give so much money to universities abroad. However, in 2016 Carnegie Mellon sucessfully sued Marvell Technology- a company headquartered in Bermuda-- for $750 million over patents. This one payment is responsible for most of the money given from Bermuda on higher education in the U.S. The money coming from other countries came from a variety of entities. When looking at the the top three countries: most of the money from Qatar comes from the Qatari government or organizations funded by the government, most of the money from China comes from companies, and most of the money from England comes from individual, private citizens.</p>
+  <p>The data indicating which countries give the most money to U.S. colleges and universities does not match the countries being investigated by the Education Department. Russia is not one of the countries giving the most money, yet is being investigated. Meanwhile, England gives the second most money of any country and is not being investigated. Only a handful of the top 10 countries-- Qatar, Saudi Arabia, China-- are being looked into. Qatar, in particular, is the country that gives most money and whose donations are being investigated.   </p>
+</div>
+
+
+<!-- Generated by ai2html v0.89.0 - 2019-11-06 14:53 -->
+<!-- ai file: templates.ai -->
+<style media="screen,print">#g-templates-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-templates-box p {
+		margin:0;
+	}
+	.g-aiAbs {
+		position:absolute;
+	}
+	.g-aiImg {
+		display:block;
+		width:100% !important;
+	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.g-aiPointText p { white-space: nowrap; }
+	#g-templates-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates-medium p {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(191,144,150);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates-medium .g-pstyle0 {
+		font-size:32px;
+		line-height:6px;
+		height:6px;
+		letter-spacing:0.005em;
+		text-align:center;
+		color:rgb(113,173,160);
+	}
+	#g-templates-medium .g-pstyle1 {
+		font-size:18px;
+		line-height:22px;
+		height:22px;
+		letter-spacing:0.05em;
+		text-align:center;
+		text-transform:uppercase;
+		color:rgb(84,96,93);
+	}
+	#g-templates-medium .g-pstyle2 {
+		height:14px;
+		text-align:right;
+	}
+	#g-templates-medium .g-pstyle3 {
+		font-size:11px;
+		line-height:10px;
+		height:10px;
+		text-align:center;
+		color:rgb(255,255,255);
+	}
+	#g-templates-medium .g-pstyle4 {
+		height:14px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+	}
+	#g-templates-medium .g-pstyle5 {
+		font-family:Open Sans;
+		font-weight:400;
+		font-style:italic;
+		height:14px;
+		letter-spacing:-0.01em;
+		text-align:right;
+	}
+	#g-templates-medium .g-pstyle6 {
+		font-family:Open Sans;
+		font-weight:400;
+		font-style:italic;
+		height:14px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+	}
+	#g-templates-medium .g-pstyle7 {
+		line-height:10px;
+		height:10px;
+		color:rgb(62,128,116);
+	}
+	#g-templates-medium .g-cstyle0 {
+		text-transform:uppercase;
+	}
+	#g-templates-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates-laptop p {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:12px;
+		line-height:7px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:-0.025em;
+		text-align:left;
+		color:rgb(191,144,150);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates-laptop .g-pstyle0 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:24px;
+		line-height:6px;
+		height:6px;
+		letter-spacing:0.005em;
+		text-align:center;
+		color:rgb(113,173,160);
+	}
+	#g-templates-laptop .g-pstyle1 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:18px;
+		line-height:22px;
+		height:22px;
+		letter-spacing:0.05em;
+		text-align:center;
+		text-transform:uppercase;
+		color:rgb(84,96,93);
+	}
+	#g-templates-laptop .g-pstyle2 {
+		height:7px;
+		text-align:right;
+	}
+	#g-templates-laptop .g-pstyle3 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:9px;
+		height:7px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(255,255,255);
+	}
+	#g-templates-laptop .g-pstyle4 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+	}
+	#g-templates-laptop .g-pstyle5 {
+		font-weight:400;
+		font-style:italic;
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:-0.01em;
+		text-align:right;
+	}
+	#g-templates-laptop .g-pstyle6 {
+		font-weight:400;
+		font-style:italic;
+		font-size:9px;
+		line-height:11px;
+		height:11px;
+		letter-spacing:-0.01em;
+		text-align:right;
+		text-transform:uppercase;
+	}
+	#g-templates-laptop .g-pstyle7 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:8px;
+		height:7px;
+		letter-spacing:0em;
+		color:rgb(62,128,116);
+	}
+	#g-templates-laptop .g-cstyle0 {
+		text-transform:uppercase;
+	}
+	#g-templates-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates-mobile p {
+		font-family:Open Sans;
+		font-weight:300;
+		font-size:11px;
+		line-height:6px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:-0.1em;
+		text-align:left;
+		color:rgb(191,144,150);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates-mobile .g-pstyle0 {
+		font-weight:400;
+		font-style:italic;
+		font-size:9px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:center;
+	}
+	#g-templates-mobile .g-pstyle1 {
+		font-size:9px;
+		line-height:10px;
+		height:10px;
+		letter-spacing:-0.01em;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	#g-templates-mobile .g-pstyle2 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:21px;
+		height:6px;
+		letter-spacing:0.005em;
+		text-align:center;
+		color:rgb(113,173,160);
+	}
+	#g-templates-mobile .g-pstyle3 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:14px;
+		letter-spacing:0.05em;
+		text-align:center;
+		text-transform:uppercase;
+		color:rgb(84,96,93);
+	}
+	#g-templates-mobile .g-pstyle4 {
+		height:6px;
+		text-align:right;
+	}
+	#g-templates-mobile .g-pstyle5 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:9px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(252,250,250);
+	}
+	#g-templates-mobile .g-pstyle6 {
+		font-family:Open Sans Condensed;
+		font-weight:700;
+		font-size:8px;
+		line-height:7px;
+		height:7px;
+		letter-spacing:0em;
+		color:rgb(62,128,116);
+	}
+	#g-templates-mobile .g-cstyle0 {
+		text-transform:uppercase;
+	}</style>
+
+<div id="g-templates-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-templates-medium" class="g-artboard" style="width:620px; height:654px;" data-aspect-ratio="0.948" data-min-width="620">
+		<img id="g-templates-medium-img" class="g-aiImg g-aiAbs" alt="" src="/templates-medium.834b5a3c.png">
+		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.767%;margin-top:-5.3px;left:49.8269%;margin-left:-272px;width:544px;">
+			<p class="g-pstyle0">MONEY FROM QATAR TO US UNIVERSITIES</p>
+		</div>
+		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:14.0847%;margin-top:-23.1px;left:50.0218%;margin-left:-233px;width:466px;">
+			<p class="g-pstyle1">Qatar is the country that gives the most money to</p>
+			<p class="g-pstyle1"> universities in the United States </p>
+		</div>
+		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:20.929%;margin-top:-7.9px;right:69.7804%;width:98px;">
+			<p class="g-pstyle2">carnegie mellon university</p>
+		</div>
+		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:21.2237%;margin-top:-5.8px;left:89.6179%;margin-left:-34.5px;width:69px;">
+			<p class="g-pstyle3">$376, 325, 840 </p>
+		</div>
+		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:23.3755%;margin-top:-7.9px;right:68.8813%;width:87px;">
+			<p class="g-pstyle2">georgetown university</p>
+		</div>
+		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:26.1278%;margin-top:-7.9px;right:69.2342%;width:92px;">
+			<p class="g-pstyle2">northwestern university</p>
+		</div>
+		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.033%;margin-top:-7.9px;right:68.5482%;width:83px;">
+			<p class="g-pstyle2">texas a&m university</p>
+		</div>
+		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.0911%;margin-top:-7.9px;right:67.6292%;width:72px;">
+			<p class="g-pstyle2">cornell university</p>
+		</div>
+		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.1492%;margin-top:-7.9px;right:72.4448%;width:121px;">
+			<p class="g-pstyle2">virginia commonwealth university</p>
+		</div>
+		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:38.0544%;margin-top:-7.9px;right:72.3581%;width:121px;">
+			<p class="g-pstyle2">university of michigan - ann arbor</p>
+		</div>
+		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.5009%;margin-top:-7.9px;right:67.8553%;width:75px;">
+			<p class="g-pstyle2">harvard university</p>
+		</div>
+		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.9474%;margin-top:-7.9px;right:69.0403%;width:90px;">
+			<p class="g-pstyle2">arizona state university</p>
+		</div>
+		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.6997%;margin-top:-7.9px;right:67.6813%;width:73px;">
+			<p class="g-pstyle2">purdue university</p>
+		</div>
+		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.7578%;margin-top:-7.9px;right:68.4117%;width:81px;">
+			<p class="g-pstyle2">university of arizona</p>
+		</div>
+		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.8159%;margin-top:-7.9px;right:69.2788%;width:93px;">
+			<p class="g-pstyle2">johns hopkins university</p>
+		</div>
+		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.1095%;margin-top:-7.9px;right:71.7058%;width:115px;">
+			<p class="g-pstyle2">university of southern california</p>
+		</div>
+		<div id="g-ai0-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:56.8618%;margin-top:-7.9px;right:72.4361%;width:118px;">
+			<p class="g-pstyle2">washington university in st. louis</p>
+		</div>
+		<div id="g-ai0-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.9199%;margin-top:-7.9px;right:68.376%;width:79px;">
+			<p class="g-pstyle2">new york university</p>
+		</div>
+		<div id="g-ai0-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:63.1309%;margin-top:-7.9px;right:72.3841%;width:123px;">
+			<p class="g-pstyle2">uni. of illinois (urbana-champaign)</p>
+		</div>
+		<div id="g-ai0-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.3419%;margin-top:-7.9px;right:68.4948%;width:81px;">
+			<p class="g-pstyle2">university of chicago</p>
+		</div>
+		<div id="g-ai0-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.4826%;margin-top:-7.9px;right:67.6335%;width:72px;">
+			<p class="g-pstyle2">depaul university</p>
+		</div>
+		<div id="g-ai0-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.2349%;margin-top:-7.9px;right:71.6053%;width:106px;">
+			<p class="g-pstyle2">pennsylvania state university</p>
+		</div>
+		<div id="g-ai0-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.9872%;margin-top:-7.9px;right:69.6503%;width:89px;">
+			<p class="g-pstyle2">oregon state university</p>
+		</div>
+		<div id="g-ai0-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.7394%;margin-top:-7.9px;right:67.8533%;width:74px;">
+			<p class="g-pstyle2">university of iowa</p>
+		</div>
+		<div id="g-ai0-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.4917%;margin-top:-7.9px;right:71.4173%;width:107px;">
+			<p class="g-pstyle2">university of colorado denver</p>
+		</div>
+		<div id="g-ai0-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.0911%;margin-top:-7.9px;right:71.4268%;width:111px;">
+			<p class="g-pstyle2">georgia institute of technology</p>
+		</div>
+		<div id="g-ai0-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.8434%;margin-top:-7.9px;right:67.4778%;width:71px;">
+			<p class="g-pstyle2">emory university</p>
+		</div>
+		<div id="g-ai0-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.0544%;margin-top:-7.9px;right:72.5046%;width:119px;">
+			<p class="g-pstyle2">university of washington - seattle</p>
+		</div>
+		<div id="g-ai0-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.8067%;margin-top:-7.9px;right:73.7268%;width:127px;">
+			<p class="g-pstyle2">indiana uiversity - purdue university</p>
+		</div>
+		<div id="g-ai0-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.2532%;margin-top:-7.9px;right:1.1584%;width:93px;">
+			<p class="g-pstyle4">Humera lodhi</p>
+		</div>
+		<div id="g-ai0-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.4061%;margin-top:-7.9px;right:66.9237%;width:63px;">
+			<p class="g-pstyle2">rice university</p>
+		</div>
+		<div id="g-ai0-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.0168%;margin-top:-14.9px;right:1.2024%;width:216px;">
+			<p class="g-pstyle5"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
+			<p class="g-pstyle6">(2012-2018)</p>
+		</div>
+		<div id="g-ai0-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.3113%;margin-top:-5.9px;left:38.871%;width:57px;">
+			<p class="g-pstyle7">$251,998  </p>
+		</div>
+		<div id="g-ai0-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.3113%;margin-top:-7.9px;right:71.8302%;width:112px;">
+			<p class="g-pstyle2">uni. north carolina (chapel hill)</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-templates-laptop" class="g-artboard" style="width:490px; height:510px;" data-aspect-ratio="0.961" data-min-width="490" data-max-width="619">
+		<img id="g-templates-laptop-img" class="g-aiImg g-aiAbs" alt="" src="/templates-laptop.39f3d474.png">
+		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.971%;margin-top:-4.8px;left:49.1807%;margin-left:-207px;width:414px;">
+			<p class="g-pstyle0">MONEY FROM QATAR TO US UNIVERSITIES</p>
+		</div>
+		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:16.1007%;margin-top:-23.1px;left:50.5379%;margin-left:-233px;width:466px;">
+			<p class="g-pstyle1">Qatar is the country that gives the most money to</p>
+			<p class="g-pstyle1"> universities in the United States </p>
+		</div>
+		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:24.7291%;margin-top:-4.1px;right:65.9078%;width:103px;">
+			<p class="g-pstyle2">carnegie mellon university</p>
+		</div>
+		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:25.4993%;margin-top:-4px;left:92.2551%;margin-left:-30.5px;width:61px;">
+			<p class="g-pstyle3">$376, 325, 840 </p>
+		</div>
+		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:27.2782%;margin-top:-4.1px;right:64.9944%;width:91px;">
+			<p class="g-pstyle2">georgetown university</p>
+		</div>
+		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.8272%;margin-top:-4.1px;right:65.3077%;width:96px;">
+			<p class="g-pstyle2">northwestern university</p>
+		</div>
+		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.3762%;margin-top:-4.1px;right:64.3953%;width:87px;">
+			<p class="g-pstyle2">texas a&m university</p>
+		</div>
+		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.1213%;margin-top:-4.1px;right:62.95%;width:75px;">
+			<p class="g-pstyle2">cornell university</p>
+		</div>
+		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:37.6703%;margin-top:-4.1px;right:68.7004%;width:126px;">
+			<p class="g-pstyle2">virginia commonwealth university</p>
+		</div>
+		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.2193%;margin-top:-4.1px;right:68.7414%;width:126px;">
+			<p class="g-pstyle2">university of michigan - ann arbor</p>
+		</div>
+		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.9644%;margin-top:-4.1px;right:63.079%;width:78px;">
+			<p class="g-pstyle2">harvard university</p>
+		</div>
+		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.5135%;margin-top:-4.1px;right:64.997%;width:94px;">
+			<p class="g-pstyle2">arizona state university</p>
+		</div>
+		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.2586%;margin-top:-4.1px;right:63.0158%;width:77px;">
+			<p class="g-pstyle2">purdue university</p>
+		</div>
+		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:50.6115%;margin-top:-4.1px;right:64.0553%;width:84px;">
+			<p class="g-pstyle2">university of arizona</p>
+		</div>
+		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.3566%;margin-top:-4.1px;right:65.6374%;width:98px;">
+			<p class="g-pstyle2">johns hopkins university</p>
+		</div>
+		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:55.9056%;margin-top:-4.1px;right:68.2195%;width:120px;">
+			<p class="g-pstyle2">university of southern california</p>
+		</div>
+		<div id="g-ai1-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:58.4546%;margin-top:-4.1px;right:68.6836%;width:122px;">
+			<p class="g-pstyle2">washington university in st. louis</p>
+		</div>
+		<div id="g-ai1-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.1997%;margin-top:-4.1px;right:64.0029%;width:82px;">
+			<p class="g-pstyle2">new york university</p>
+		</div>
+		<div id="g-ai1-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:63.7488%;margin-top:-4.1px;right:68.6543%;width:127px;">
+			<p class="g-pstyle2">uni. of illinois (urbana-champaign)</p>
+		</div>
+		<div id="g-ai1-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.4939%;margin-top:-4.1px;right:64.4467%;width:85px;">
+			<p class="g-pstyle2">university of chicago</p>
+		</div>
+		<div id="g-ai1-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.435%;margin-top:-4.1px;right:63.0317%;width:75px;">
+			<p class="g-pstyle2">depaul university</p>
+		</div>
+		<div id="g-ai1-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.5919%;margin-top:-4.1px;right:66.9436%;width:111px;">
+			<p class="g-pstyle2">pennsylvania state university</p>
+		</div>
+		<div id="g-ai1-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.1409%;margin-top:-4.1px;right:65.2433%;width:93px;">
+			<p class="g-pstyle2">oregon state university</p>
+		</div>
+		<div id="g-ai1-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.6899%;margin-top:-4.1px;right:63.0094%;width:76px;">
+			<p class="g-pstyle2">university of iowa</p>
+		</div>
+		<div id="g-ai1-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.435%;margin-top:-4.1px;right:67.6094%;width:113px;">
+			<p class="g-pstyle2">university of colorado denver</p>
+		</div>
+		<div id="g-ai1-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.1801%;margin-top:-4.1px;right:67.7023%;width:116px;">
+			<p class="g-pstyle2">georgia institute of technology</p>
+		</div>
+		<div id="g-ai1-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.5331%;margin-top:-4.1px;right:62.3631%;width:74px;">
+			<p class="g-pstyle2">emory university</p>
+		</div>
+		<div id="g-ai1-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:87.0821%;margin-top:-4.1px;right:68.2555%;width:124px;">
+			<p class="g-pstyle2">university of washington - seattle</p>
+		</div>
+		<div id="g-ai1-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:89.8272%;margin-top:-4.1px;right:69.9803%;width:133px;">
+			<p class="g-pstyle2">indiana uiversity - purdue university</p>
+		</div>
+		<div id="g-ai1-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:92.5723%;margin-top:-4.1px;right:61.5133%;width:65px;">
+			<p class="g-pstyle2">rice university</p>
+		</div>
+		<div id="g-ai1-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.7346%;margin-top:-6px;right:2.0586%;width:75px;">
+			<p class="g-pstyle4">Humera lodhi</p>
+		</div>
+		<div id="g-ai1-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.9252%;margin-top:-4.1px;right:67.791%;width:115px;">
+			<p class="g-pstyle2">uni. north carolina (chapel hill)</p>
+		</div>
+		<div id="g-ai1-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.5172%;margin-top:-11.2px;right:1.9316%;width:167px;">
+			<p class="g-pstyle5"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
+			<p class="g-pstyle6">(2012-2018)</p>
+		</div>
+		<div id="g-ai1-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.1022%;margin-top:-4.1px;left:44.385%;width:48px;">
+			<p class="g-pstyle7">$251,998  </p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-templates-mobile" class="g-artboard" style="width:375px; height:458.799999999999px;" data-aspect-ratio="0.817" data-min-width="375" data-max-width="489">
+		<img id="g-templates-mobile-img" class="g-aiImg g-aiAbs" alt="" src="/templates-mobile.06ad816d.png">
+		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.5727%;margin-top:-5.4px;left:61.1008%;margin-left:-78.5px;width:157px;">
+			<p class="g-pstyle0"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education<span class="g-cstyle0"> (2012-2018)</span></p>
+		</div>
+		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.5737%;margin-top:-5.4px;left:29.4313%;margin-left:-36.5px;width:73px;">
+			<p class="g-pstyle1">Humera lodhi | </p>
+		</div>
+		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:7.5269%;margin-top:-4.5px;left:50.0456%;margin-left:-182.5px;width:365px;">
+			<p class="g-pstyle2">MONEY FROM QATAR TO US UNIVERSITIES</p>
+		</div>
+		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:13.53%;margin-top:-15.1px;left:50.024%;margin-left:-159px;width:318px;">
+			<p class="g-pstyle3">Qatar is the country that gives the most money to</p>
+			<p class="g-pstyle3"> universities in the United States </p>
+		</div>
+		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.3314%;margin-top:-3.7px;right:61.8875%;width:85px;">
+			<p class="g-pstyle4">carnegie mellon university</p>
+		</div>
+		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.8306%;margin-top:-4px;left:85.8867%;margin-left:-24.5px;width:49px;">
+			<p class="g-pstyle5">$376, 325, 840 </p>
+		</div>
+		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:22.383%;margin-top:-3.7px;right:60.7932%;width:76px;">
+			<p class="g-pstyle4">georgetown university</p>
+		</div>
+		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:25.2163%;margin-top:-3.7px;right:61.107%;width:80px;">
+			<p class="g-pstyle4">northwestern university</p>
+		</div>
+		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:28.05%;margin-top:-3.7px;right:59.9523%;width:73px;">
+			<p class="g-pstyle4">texas a&m university</p>
+		</div>
+		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:31.1012%;margin-top:-3.7px;right:58.0164%;width:63px;">
+			<p class="g-pstyle4">cornell university</p>
+		</div>
+		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.7167%;margin-top:-3.7px;right:65.6555%;width:103px;">
+			<p class="g-pstyle4">virginia commonwealth university</p>
+		</div>
+		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:36.7684%;margin-top:-3.7px;right:65.4271%;width:103px;">
+			<p class="g-pstyle4">university of michigan - ann arbor</p>
+		</div>
+		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:39.6017%;margin-top:-3.7px;right:58.1294%;width:66px;">
+			<p class="g-pstyle4">harvard university</p>
+		</div>
+		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.6531%;margin-top:-3.7px;right:60.8716%;width:77px;">
+			<p class="g-pstyle4">arizona state university</p>
+		</div>
+		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.4868%;margin-top:-3.7px;right:58.2029%;width:65px;">
+			<p class="g-pstyle4">purdue university</p>
+		</div>
+		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.32%;margin-top:-3.7px;right:59.4122%;width:70px;">
+			<p class="g-pstyle4">university of arizona</p>
+		</div>
+		<div id="g-ai2-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.3717%;margin-top:-3.7px;right:61.6435%;width:81px;">
+			<p class="g-pstyle4">johns hopkins university</p>
+		</div>
+		<div id="g-ai2-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.2052%;margin-top:-3.7px;right:64.9945%;width:97px;">
+			<p class="g-pstyle4">university of southern california</p>
+		</div>
+		<div id="g-ai2-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.0387%;margin-top:-3.7px;right:65.6943%;width:98px;">
+			<p class="g-pstyle4">washington university in st. louis</p>
+		</div>
+		<div id="g-ai2-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:60.0901%;margin-top:-3.7px;right:59.3984%;width:69px;">
+			<p class="g-pstyle4">new york university</p>
+		</div>
+		<div id="g-ai2-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.9234%;margin-top:-3.7px;right:65.7026%;width:102px;">
+			<p class="g-pstyle4">uni. of illinois (urbana-champaign)</p>
+		</div>
+		<div id="g-ai2-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.7571%;margin-top:-3.7px;right:60.1786%;width:70px;">
+			<p class="g-pstyle4">university of chicago</p>
+		</div>
+		<div id="g-ai2-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.2442%;margin-top:-3.7px;right:57.9854%;width:64px;">
+			<p class="g-pstyle4">depaul university</p>
+		</div>
+		<div id="g-ai2-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.642%;margin-top:-3.7px;right:63.2281%;width:91px;">
+			<p class="g-pstyle4">pennsylvania state university</p>
+		</div>
+		<div id="g-ai2-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.4752%;margin-top:-3.7px;right:61.0727%;width:77px;">
+			<p class="g-pstyle4">oregon state university</p>
+		</div>
+		<div id="g-ai2-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:77.3087%;margin-top:-3.7px;right:59.6727%;width:63px;">
+			<p class="g-pstyle4">university of iowa</p>
+		</div>
+		<div id="g-ai2-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:80.3602%;margin-top:-3.7px;right:64.3365%;width:92px;">
+			<p class="g-pstyle4">university of colorado denver</p>
+		</div>
+		<div id="g-ai2-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.1938%;margin-top:-3.7px;right:64.1255%;width:95px;">
+			<p class="g-pstyle4">georgia institute of technology</p>
+		</div>
+		<div id="g-ai2-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:86.0273%;margin-top:-3.7px;right:59.407%;width:63px;">
+			<p class="g-pstyle4">emory university</p>
+		</div>
+		<div id="g-ai2-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.8606%;margin-top:-3.7px;right:65.1034%;width:100px;">
+			<p class="g-pstyle4">university of washington - seattle</p>
+		</div>
+		<div id="g-ai2-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:91.9122%;margin-top:-3.7px;right:67.3284%;width:107px;">
+			<p class="g-pstyle4">indiana uiversity - purdue university</p>
+		</div>
+		<div id="g-ai2-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.9637%;margin-top:-3.7px;right:58.0526%;width:55px;">
+			<p class="g-pstyle4">rice university</p>
+		</div>
+		<div id="g-ai2-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.5792%;margin-top:-3.7px;right:64.2466%;width:93px;">
+			<p class="g-pstyle4">uni. north carolina (chapel hill)</p>
+		</div>
+		<div id="g-ai2-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.4418%;margin-top:-4.1px;left:49.0104%;width:40px;">
+			<p class="g-pstyle6">$251,998  </p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-11-06 14:53 -->
+<div class="story-body">
+  <p></p>
+  <p>Almost 95 percent of the money from Qatar falls under the "contract" category. In particular, Qatar gives money to U.S. universities to build branches of that institution in the country. Carnegie Mellon recieves more money from Qatar than any other university.</p>
+  <p> This past summer, the Education Department opened investigations about foreign funding of specific schools: Texas A&M, Carnegie Mellon, Rutgers, and Georgetown. It was the first time in recent history specific schools were investigated for something of this nature. From among these, Rutgers is the only school that is not amongs the top 50 reciepents of foreign money. </p>
+</div>
+
+
 <!-- Generated by ai2html v0.89.0 - 2019-11-06 14:53 -->
 <!-- ai file: templates copy.ai -->
+
 <style media="screen,print">#g-templates-copy-box .g-artboard {
 		margin:0 auto;
 	}
@@ -1206,1401 +2603,9 @@ analytics": ""
 </div>
 
 <!-- End ai2html - 2019-11-06 14:53 -->
-<div class="story-body">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit tincidunt dapibus interdum, dui ligula tincidunt arcu, sed euismod lorem lacus quis metus. Aliquam non feugiat mi. Nam dictum arcu at magna sollicitudin tristique.</p>
-  <p>Quisque commodo, orci a varius rhoncus, diam magna consectetur lectus, tincidunt consectetur lectus ipsum vel leo. Mauris in augue eu ex euismod facilisis ac quis ipsum.</p>
-  <!-- If you use images, the path is just images/___ -->
-  
-  <p>Phasellus lacus lectus, semper ut mollis vitae, fermentum ac massa. Duis pulvinar, lorem non interdum bibendum, sapien tellus volutpat massa, mollis sodales lectus ligula eget ex. Donec hendrerit imperdiet commodo. Fusce ut leo sed purus posuere tempor ut bibendum lectus. Aenean sem purus, euismod ut fringilla ultricies, convallis a nulla.</p>
-</div>
-<!-- Generated by ai2html v0.89.0 - 2019-11-06 14:53 -->
-<!-- ai file: templates.ai -->
-<style media="screen,print">#g-templates-box .g-artboard {
-		margin:0 auto;
-	}
-	#g-templates-box p {
-		margin:0;
-	}
-	.g-aiAbs {
-		position:absolute;
-	}
-	.g-aiImg {
-		display:block;
-		width:100% !important;
-	}
-	.g-aiSymbol {
-		position: absolute;
-		box-sizing: border-box;
-	}
-	.g-aiPointText p { white-space: nowrap; }
-	#g-templates-medium {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-templates-medium p {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:12px;
-		line-height:14px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:0em;
-		text-align:left;
-		color:rgb(191,144,150);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-templates-medium .g-pstyle0 {
-		font-size:32px;
-		line-height:6px;
-		height:6px;
-		letter-spacing:0.005em;
-		text-align:center;
-		color:rgb(113,173,160);
-	}
-	#g-templates-medium .g-pstyle1 {
-		font-size:18px;
-		line-height:22px;
-		height:22px;
-		letter-spacing:0.05em;
-		text-align:center;
-		text-transform:uppercase;
-		color:rgb(84,96,93);
-	}
-	#g-templates-medium .g-pstyle2 {
-		height:14px;
-		text-align:right;
-	}
-	#g-templates-medium .g-pstyle3 {
-		font-size:11px;
-		line-height:10px;
-		height:10px;
-		text-align:center;
-		color:rgb(255,255,255);
-	}
-	#g-templates-medium .g-pstyle4 {
-		height:14px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-	}
-	#g-templates-medium .g-pstyle5 {
-		font-family:Open Sans;
-		font-weight:400;
-		font-style:italic;
-		height:14px;
-		letter-spacing:-0.01em;
-		text-align:right;
-	}
-	#g-templates-medium .g-pstyle6 {
-		font-family:Open Sans;
-		font-weight:400;
-		font-style:italic;
-		height:14px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-	}
-	#g-templates-medium .g-pstyle7 {
-		line-height:10px;
-		height:10px;
-		color:rgb(62,128,116);
-	}
-	#g-templates-medium .g-cstyle0 {
-		text-transform:uppercase;
-	}
-	#g-templates-laptop {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-templates-laptop p {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:12px;
-		line-height:7px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:-0.025em;
-		text-align:left;
-		color:rgb(191,144,150);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-templates-laptop .g-pstyle0 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:24px;
-		line-height:6px;
-		height:6px;
-		letter-spacing:0.005em;
-		text-align:center;
-		color:rgb(113,173,160);
-	}
-	#g-templates-laptop .g-pstyle1 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:18px;
-		line-height:22px;
-		height:22px;
-		letter-spacing:0.05em;
-		text-align:center;
-		text-transform:uppercase;
-		color:rgb(84,96,93);
-	}
-	#g-templates-laptop .g-pstyle2 {
-		height:7px;
-		text-align:right;
-	}
-	#g-templates-laptop .g-pstyle3 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:9px;
-		height:7px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(255,255,255);
-	}
-	#g-templates-laptop .g-pstyle4 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-	}
-	#g-templates-laptop .g-pstyle5 {
-		font-weight:400;
-		font-style:italic;
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:-0.01em;
-		text-align:right;
-	}
-	#g-templates-laptop .g-pstyle6 {
-		font-weight:400;
-		font-style:italic;
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-	}
-	#g-templates-laptop .g-pstyle7 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:8px;
-		height:7px;
-		letter-spacing:0em;
-		color:rgb(62,128,116);
-	}
-	#g-templates-laptop .g-cstyle0 {
-		text-transform:uppercase;
-	}
-	#g-templates-mobile {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-templates-mobile p {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:11px;
-		line-height:6px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:-0.1em;
-		text-align:left;
-		color:rgb(191,144,150);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-templates-mobile .g-pstyle0 {
-		font-weight:400;
-		font-style:italic;
-		font-size:9px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:center;
-	}
-	#g-templates-mobile .g-pstyle1 {
-		font-size:9px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:center;
-		text-transform:uppercase;
-	}
-	#g-templates-mobile .g-pstyle2 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:21px;
-		height:6px;
-		letter-spacing:0.005em;
-		text-align:center;
-		color:rgb(113,173,160);
-	}
-	#g-templates-mobile .g-pstyle3 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:12px;
-		line-height:14px;
-		height:14px;
-		letter-spacing:0.05em;
-		text-align:center;
-		text-transform:uppercase;
-		color:rgb(84,96,93);
-	}
-	#g-templates-mobile .g-pstyle4 {
-		height:6px;
-		text-align:right;
-	}
-	#g-templates-mobile .g-pstyle5 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:9px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(252,250,250);
-	}
-	#g-templates-mobile .g-pstyle6 {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:8px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:0em;
-		color:rgb(62,128,116);
-	}
-	#g-templates-mobile .g-cstyle0 {
-		text-transform:uppercase;
-	}</style>
 
-<div id="g-templates-box" class="ai2html">
 
-	<!-- Artboard: medium -->
-	<div id="g-templates-medium" class="g-artboard" style="width:620px; height:654px;" data-aspect-ratio="0.948" data-min-width="620">
-		<img id="g-templates-medium-img" class="g-aiImg g-aiAbs" alt="" src="/templates-medium.834b5a3c.png">
-		<div id="g-ai0-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.767%;margin-top:-5.3px;left:49.8269%;margin-left:-272px;width:544px;">
-			<p class="g-pstyle0">MONEY FROM QATAR TO US UNIVERSITIES</p>
-		</div>
-		<div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:14.0847%;margin-top:-23.1px;left:50.0218%;margin-left:-233px;width:466px;">
-			<p class="g-pstyle1">Qatar is the country that gives the most money to</p>
-			<p class="g-pstyle1"> universities in the United States </p>
-		</div>
-		<div id="g-ai0-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:20.929%;margin-top:-7.9px;right:69.7804%;width:98px;">
-			<p class="g-pstyle2">carnegie mellon university</p>
-		</div>
-		<div id="g-ai0-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:21.2237%;margin-top:-5.8px;left:89.6179%;margin-left:-34.5px;width:69px;">
-			<p class="g-pstyle3">$376, 325, 840 </p>
-		</div>
-		<div id="g-ai0-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:23.3755%;margin-top:-7.9px;right:68.8813%;width:87px;">
-			<p class="g-pstyle2">georgetown university</p>
-		</div>
-		<div id="g-ai0-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:26.1278%;margin-top:-7.9px;right:69.2342%;width:92px;">
-			<p class="g-pstyle2">northwestern university</p>
-		</div>
-		<div id="g-ai0-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.033%;margin-top:-7.9px;right:68.5482%;width:83px;">
-			<p class="g-pstyle2">texas a&m university</p>
-		</div>
-		<div id="g-ai0-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.0911%;margin-top:-7.9px;right:67.6292%;width:72px;">
-			<p class="g-pstyle2">cornell university</p>
-		</div>
-		<div id="g-ai0-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.1492%;margin-top:-7.9px;right:72.4448%;width:121px;">
-			<p class="g-pstyle2">virginia commonwealth university</p>
-		</div>
-		<div id="g-ai0-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:38.0544%;margin-top:-7.9px;right:72.3581%;width:121px;">
-			<p class="g-pstyle2">university of michigan - ann arbor</p>
-		</div>
-		<div id="g-ai0-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.5009%;margin-top:-7.9px;right:67.8553%;width:75px;">
-			<p class="g-pstyle2">harvard university</p>
-		</div>
-		<div id="g-ai0-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.9474%;margin-top:-7.9px;right:69.0403%;width:90px;">
-			<p class="g-pstyle2">arizona state university</p>
-		</div>
-		<div id="g-ai0-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.6997%;margin-top:-7.9px;right:67.6813%;width:73px;">
-			<p class="g-pstyle2">purdue university</p>
-		</div>
-		<div id="g-ai0-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.7578%;margin-top:-7.9px;right:68.4117%;width:81px;">
-			<p class="g-pstyle2">university of arizona</p>
-		</div>
-		<div id="g-ai0-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.8159%;margin-top:-7.9px;right:69.2788%;width:93px;">
-			<p class="g-pstyle2">johns hopkins university</p>
-		</div>
-		<div id="g-ai0-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.1095%;margin-top:-7.9px;right:71.7058%;width:115px;">
-			<p class="g-pstyle2">university of southern california</p>
-		</div>
-		<div id="g-ai0-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:56.8618%;margin-top:-7.9px;right:72.4361%;width:118px;">
-			<p class="g-pstyle2">washington university in st. louis</p>
-		</div>
-		<div id="g-ai0-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:59.9199%;margin-top:-7.9px;right:68.376%;width:79px;">
-			<p class="g-pstyle2">new york university</p>
-		</div>
-		<div id="g-ai0-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:63.1309%;margin-top:-7.9px;right:72.3841%;width:123px;">
-			<p class="g-pstyle2">uni. of illinois (urbana-champaign)</p>
-		</div>
-		<div id="g-ai0-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.3419%;margin-top:-7.9px;right:68.4948%;width:81px;">
-			<p class="g-pstyle2">university of chicago</p>
-		</div>
-		<div id="g-ai0-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:68.4826%;margin-top:-7.9px;right:67.6335%;width:72px;">
-			<p class="g-pstyle2">depaul university</p>
-		</div>
-		<div id="g-ai0-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.2349%;margin-top:-7.9px;right:71.6053%;width:106px;">
-			<p class="g-pstyle2">pennsylvania state university</p>
-		</div>
-		<div id="g-ai0-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:73.9872%;margin-top:-7.9px;right:69.6503%;width:89px;">
-			<p class="g-pstyle2">oregon state university</p>
-		</div>
-		<div id="g-ai0-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.7394%;margin-top:-7.9px;right:67.8533%;width:74px;">
-			<p class="g-pstyle2">university of iowa</p>
-		</div>
-		<div id="g-ai0-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.4917%;margin-top:-7.9px;right:71.4173%;width:107px;">
-			<p class="g-pstyle2">university of colorado denver</p>
-		</div>
-		<div id="g-ai0-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.0911%;margin-top:-7.9px;right:71.4268%;width:111px;">
-			<p class="g-pstyle2">georgia institute of technology</p>
-		</div>
-		<div id="g-ai0-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.8434%;margin-top:-7.9px;right:67.4778%;width:71px;">
-			<p class="g-pstyle2">emory university</p>
-		</div>
-		<div id="g-ai0-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.0544%;margin-top:-7.9px;right:72.5046%;width:119px;">
-			<p class="g-pstyle2">university of washington - seattle</p>
-		</div>
-		<div id="g-ai0-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:90.8067%;margin-top:-7.9px;right:73.7268%;width:127px;">
-			<p class="g-pstyle2">indiana uiversity - purdue university</p>
-		</div>
-		<div id="g-ai0-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.2532%;margin-top:-7.9px;right:1.1584%;width:93px;">
-			<p class="g-pstyle4">Humera lodhi</p>
-		</div>
-		<div id="g-ai0-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.4061%;margin-top:-7.9px;right:66.9237%;width:63px;">
-			<p class="g-pstyle2">rice university</p>
-		</div>
-		<div id="g-ai0-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.0168%;margin-top:-14.9px;right:1.2024%;width:216px;">
-			<p class="g-pstyle5"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
-			<p class="g-pstyle6">(2012-2018)</p>
-		</div>
-		<div id="g-ai0-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.3113%;margin-top:-5.9px;left:38.871%;width:57px;">
-			<p class="g-pstyle7">$251,998  </p>
-		</div>
-		<div id="g-ai0-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.3113%;margin-top:-7.9px;right:71.8302%;width:112px;">
-			<p class="g-pstyle2">uni. north carolina (chapel hill)</p>
-		</div>
-	</div>
-
-	<!-- Artboard: laptop -->
-	<div id="g-templates-laptop" class="g-artboard" style="width:490px; height:510px;" data-aspect-ratio="0.961" data-min-width="490" data-max-width="619">
-		<img id="g-templates-laptop-img" class="g-aiImg g-aiAbs" alt="" src="/templates-laptop.39f3d474.png">
-		<div id="g-ai1-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:8.971%;margin-top:-4.8px;left:49.1807%;margin-left:-207px;width:414px;">
-			<p class="g-pstyle0">MONEY FROM QATAR TO US UNIVERSITIES</p>
-		</div>
-		<div id="g-ai1-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:16.1007%;margin-top:-23.1px;left:50.5379%;margin-left:-233px;width:466px;">
-			<p class="g-pstyle1">Qatar is the country that gives the most money to</p>
-			<p class="g-pstyle1"> universities in the United States </p>
-		</div>
-		<div id="g-ai1-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:24.7291%;margin-top:-4.1px;right:65.9078%;width:103px;">
-			<p class="g-pstyle2">carnegie mellon university</p>
-		</div>
-		<div id="g-ai1-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:25.4993%;margin-top:-4px;left:92.2551%;margin-left:-30.5px;width:61px;">
-			<p class="g-pstyle3">$376, 325, 840 </p>
-		</div>
-		<div id="g-ai1-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:27.2782%;margin-top:-4.1px;right:64.9944%;width:91px;">
-			<p class="g-pstyle2">georgetown university</p>
-		</div>
-		<div id="g-ai1-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:29.8272%;margin-top:-4.1px;right:65.3077%;width:96px;">
-			<p class="g-pstyle2">northwestern university</p>
-		</div>
-		<div id="g-ai1-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:32.3762%;margin-top:-4.1px;right:64.3953%;width:87px;">
-			<p class="g-pstyle2">texas a&m university</p>
-		</div>
-		<div id="g-ai1-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:35.1213%;margin-top:-4.1px;right:62.95%;width:75px;">
-			<p class="g-pstyle2">cornell university</p>
-		</div>
-		<div id="g-ai1-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:37.6703%;margin-top:-4.1px;right:68.7004%;width:126px;">
-			<p class="g-pstyle2">virginia commonwealth university</p>
-		</div>
-		<div id="g-ai1-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:40.2193%;margin-top:-4.1px;right:68.7414%;width:126px;">
-			<p class="g-pstyle2">university of michigan - ann arbor</p>
-		</div>
-		<div id="g-ai1-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.9644%;margin-top:-4.1px;right:63.079%;width:78px;">
-			<p class="g-pstyle2">harvard university</p>
-		</div>
-		<div id="g-ai1-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.5135%;margin-top:-4.1px;right:64.997%;width:94px;">
-			<p class="g-pstyle2">arizona state university</p>
-		</div>
-		<div id="g-ai1-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.2586%;margin-top:-4.1px;right:63.0158%;width:77px;">
-			<p class="g-pstyle2">purdue university</p>
-		</div>
-		<div id="g-ai1-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:50.6115%;margin-top:-4.1px;right:64.0553%;width:84px;">
-			<p class="g-pstyle2">university of arizona</p>
-		</div>
-		<div id="g-ai1-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:53.3566%;margin-top:-4.1px;right:65.6374%;width:98px;">
-			<p class="g-pstyle2">johns hopkins university</p>
-		</div>
-		<div id="g-ai1-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:55.9056%;margin-top:-4.1px;right:68.2195%;width:120px;">
-			<p class="g-pstyle2">university of southern california</p>
-		</div>
-		<div id="g-ai1-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:58.4546%;margin-top:-4.1px;right:68.6836%;width:122px;">
-			<p class="g-pstyle2">washington university in st. louis</p>
-		</div>
-		<div id="g-ai1-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:61.1997%;margin-top:-4.1px;right:64.0029%;width:82px;">
-			<p class="g-pstyle2">new york university</p>
-		</div>
-		<div id="g-ai1-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:63.7488%;margin-top:-4.1px;right:68.6543%;width:127px;">
-			<p class="g-pstyle2">uni. of illinois (urbana-champaign)</p>
-		</div>
-		<div id="g-ai1-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:66.4939%;margin-top:-4.1px;right:64.4467%;width:85px;">
-			<p class="g-pstyle2">university of chicago</p>
-		</div>
-		<div id="g-ai1-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.435%;margin-top:-4.1px;right:63.0317%;width:75px;">
-			<p class="g-pstyle2">depaul university</p>
-		</div>
-		<div id="g-ai1-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.5919%;margin-top:-4.1px;right:66.9436%;width:111px;">
-			<p class="g-pstyle2">pennsylvania state university</p>
-		</div>
-		<div id="g-ai1-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.1409%;margin-top:-4.1px;right:65.2433%;width:93px;">
-			<p class="g-pstyle2">oregon state university</p>
-		</div>
-		<div id="g-ai1-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:76.6899%;margin-top:-4.1px;right:63.0094%;width:76px;">
-			<p class="g-pstyle2">university of iowa</p>
-		</div>
-		<div id="g-ai1-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:79.435%;margin-top:-4.1px;right:67.6094%;width:113px;">
-			<p class="g-pstyle2">university of colorado denver</p>
-		</div>
-		<div id="g-ai1-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:82.1801%;margin-top:-4.1px;right:67.7023%;width:116px;">
-			<p class="g-pstyle2">georgia institute of technology</p>
-		</div>
-		<div id="g-ai1-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:84.5331%;margin-top:-4.1px;right:62.3631%;width:74px;">
-			<p class="g-pstyle2">emory university</p>
-		</div>
-		<div id="g-ai1-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:87.0821%;margin-top:-4.1px;right:68.2555%;width:124px;">
-			<p class="g-pstyle2">university of washington - seattle</p>
-		</div>
-		<div id="g-ai1-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:89.8272%;margin-top:-4.1px;right:69.9803%;width:133px;">
-			<p class="g-pstyle2">indiana uiversity - purdue university</p>
-		</div>
-		<div id="g-ai1-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:92.5723%;margin-top:-4.1px;right:61.5133%;width:65px;">
-			<p class="g-pstyle2">rice university</p>
-		</div>
-		<div id="g-ai1-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:93.7346%;margin-top:-6px;right:2.0586%;width:75px;">
-			<p class="g-pstyle4">Humera lodhi</p>
-		</div>
-		<div id="g-ai1-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.9252%;margin-top:-4.1px;right:67.791%;width:115px;">
-			<p class="g-pstyle2">uni. north carolina (chapel hill)</p>
-		</div>
-		<div id="g-ai1-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.5172%;margin-top:-11.2px;right:1.9316%;width:167px;">
-			<p class="g-pstyle5"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
-			<p class="g-pstyle6">(2012-2018)</p>
-		</div>
-		<div id="g-ai1-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:96.1022%;margin-top:-4.1px;left:44.385%;width:48px;">
-			<p class="g-pstyle7">$251,998  </p>
-		</div>
-	</div>
-
-	<!-- Artboard: mobile -->
-	<div id="g-templates-mobile" class="g-artboard" style="width:375px; height:458.799999999999px;" data-aspect-ratio="0.817" data-min-width="375" data-max-width="489">
-		<img id="g-templates-mobile-img" class="g-aiImg g-aiAbs" alt="" src="/templates-mobile.06ad816d.png">
-		<div id="g-ai2-1" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.5727%;margin-top:-5.4px;left:61.1008%;margin-left:-78.5px;width:157px;">
-			<p class="g-pstyle0"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education<span class="g-cstyle0"> (2012-2018)</span></p>
-		</div>
-		<div id="g-ai2-2" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:3.5737%;margin-top:-5.4px;left:29.4313%;margin-left:-36.5px;width:73px;">
-			<p class="g-pstyle1">Humera lodhi | </p>
-		</div>
-		<div id="g-ai2-3" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:7.5269%;margin-top:-4.5px;left:50.0456%;margin-left:-182.5px;width:365px;">
-			<p class="g-pstyle2">MONEY FROM QATAR TO US UNIVERSITIES</p>
-		</div>
-		<div id="g-ai2-4" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:13.53%;margin-top:-15.1px;left:50.024%;margin-left:-159px;width:318px;">
-			<p class="g-pstyle3">Qatar is the country that gives the most money to</p>
-			<p class="g-pstyle3"> universities in the United States </p>
-		</div>
-		<div id="g-ai2-5" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.3314%;margin-top:-3.7px;right:61.8875%;width:85px;">
-			<p class="g-pstyle4">carnegie mellon university</p>
-		</div>
-		<div id="g-ai2-6" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:19.8306%;margin-top:-4px;left:85.8867%;margin-left:-24.5px;width:49px;">
-			<p class="g-pstyle5">$376, 325, 840 </p>
-		</div>
-		<div id="g-ai2-7" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:22.383%;margin-top:-3.7px;right:60.7932%;width:76px;">
-			<p class="g-pstyle4">georgetown university</p>
-		</div>
-		<div id="g-ai2-8" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:25.2163%;margin-top:-3.7px;right:61.107%;width:80px;">
-			<p class="g-pstyle4">northwestern university</p>
-		</div>
-		<div id="g-ai2-9" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:28.05%;margin-top:-3.7px;right:59.9523%;width:73px;">
-			<p class="g-pstyle4">texas a&m university</p>
-		</div>
-		<div id="g-ai2-10" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:31.1012%;margin-top:-3.7px;right:58.0164%;width:63px;">
-			<p class="g-pstyle4">cornell university</p>
-		</div>
-		<div id="g-ai2-11" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:33.7167%;margin-top:-3.7px;right:65.6555%;width:103px;">
-			<p class="g-pstyle4">virginia commonwealth university</p>
-		</div>
-		<div id="g-ai2-12" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:36.7684%;margin-top:-3.7px;right:65.4271%;width:103px;">
-			<p class="g-pstyle4">university of michigan - ann arbor</p>
-		</div>
-		<div id="g-ai2-13" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:39.6017%;margin-top:-3.7px;right:58.1294%;width:66px;">
-			<p class="g-pstyle4">harvard university</p>
-		</div>
-		<div id="g-ai2-14" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:42.6531%;margin-top:-3.7px;right:60.8716%;width:77px;">
-			<p class="g-pstyle4">arizona state university</p>
-		</div>
-		<div id="g-ai2-15" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:45.4868%;margin-top:-3.7px;right:58.2029%;width:65px;">
-			<p class="g-pstyle4">purdue university</p>
-		</div>
-		<div id="g-ai2-16" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:48.32%;margin-top:-3.7px;right:59.4122%;width:70px;">
-			<p class="g-pstyle4">university of arizona</p>
-		</div>
-		<div id="g-ai2-17" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:51.3717%;margin-top:-3.7px;right:61.6435%;width:81px;">
-			<p class="g-pstyle4">johns hopkins university</p>
-		</div>
-		<div id="g-ai2-18" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:54.2052%;margin-top:-3.7px;right:64.9945%;width:97px;">
-			<p class="g-pstyle4">university of southern california</p>
-		</div>
-		<div id="g-ai2-19" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:57.0387%;margin-top:-3.7px;right:65.6943%;width:98px;">
-			<p class="g-pstyle4">washington university in st. louis</p>
-		</div>
-		<div id="g-ai2-20" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:60.0901%;margin-top:-3.7px;right:59.3984%;width:69px;">
-			<p class="g-pstyle4">new york university</p>
-		</div>
-		<div id="g-ai2-21" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:62.9234%;margin-top:-3.7px;right:65.7026%;width:102px;">
-			<p class="g-pstyle4">uni. of illinois (urbana-champaign)</p>
-		</div>
-		<div id="g-ai2-22" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:65.7571%;margin-top:-3.7px;right:60.1786%;width:70px;">
-			<p class="g-pstyle4">university of chicago</p>
-		</div>
-		<div id="g-ai2-23" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:69.2442%;margin-top:-3.7px;right:57.9854%;width:64px;">
-			<p class="g-pstyle4">depaul university</p>
-		</div>
-		<div id="g-ai2-24" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:71.642%;margin-top:-3.7px;right:63.2281%;width:91px;">
-			<p class="g-pstyle4">pennsylvania state university</p>
-		</div>
-		<div id="g-ai2-25" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:74.4752%;margin-top:-3.7px;right:61.0727%;width:77px;">
-			<p class="g-pstyle4">oregon state university</p>
-		</div>
-		<div id="g-ai2-26" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:77.3087%;margin-top:-3.7px;right:59.6727%;width:63px;">
-			<p class="g-pstyle4">university of iowa</p>
-		</div>
-		<div id="g-ai2-27" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:80.3602%;margin-top:-3.7px;right:64.3365%;width:92px;">
-			<p class="g-pstyle4">university of colorado denver</p>
-		</div>
-		<div id="g-ai2-28" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:83.1938%;margin-top:-3.7px;right:64.1255%;width:95px;">
-			<p class="g-pstyle4">georgia institute of technology</p>
-		</div>
-		<div id="g-ai2-29" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:86.0273%;margin-top:-3.7px;right:59.407%;width:63px;">
-			<p class="g-pstyle4">emory university</p>
-		</div>
-		<div id="g-ai2-30" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:88.8606%;margin-top:-3.7px;right:65.1034%;width:100px;">
-			<p class="g-pstyle4">university of washington - seattle</p>
-		</div>
-		<div id="g-ai2-31" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:91.9122%;margin-top:-3.7px;right:67.3284%;width:107px;">
-			<p class="g-pstyle4">indiana uiversity - purdue university</p>
-		</div>
-		<div id="g-ai2-32" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:94.9637%;margin-top:-3.7px;right:58.0526%;width:55px;">
-			<p class="g-pstyle4">rice university</p>
-		</div>
-		<div id="g-ai2-33" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.5792%;margin-top:-3.7px;right:64.2466%;width:93px;">
-			<p class="g-pstyle4">uni. north carolina (chapel hill)</p>
-		</div>
-		<div id="g-ai2-34" class="g-ai2html-settings g-aiAbs g-aiPointText" style="top:97.4418%;margin-top:-4.1px;left:49.0104%;width:40px;">
-			<p class="g-pstyle6">$251,998  </p>
-		</div>
-	</div>
-
-</div>
-
-<!-- End ai2html - 2019-11-06 14:53 -->
-<div class="story-body">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit tincidunt dapibus interdum, dui ligula tincidunt arcu, sed euismod lorem lacus quis metus. Aliquam non feugiat mi. Nam dictum arcu at magna sollicitudin tristique.</p>
-  <p>Quisque commodo, orci a varius rhoncus, diam magna consectetur lectus, tincidunt consectetur lectus ipsum vel leo. Mauris in augue eu ex euismod facilisis ac quis ipsum.</p>
-  <!-- If you use images, the path is just images/___ -->
-  
-  <p>Phasellus lacus lectus, semper ut mollis vitae, fermentum ac massa. Duis pulvinar, lorem non interdum bibendum, sapien tellus volutpat massa, mollis sodales lectus ligula eget ex. Donec hendrerit imperdiet commodo. Fusce ut leo sed purus posuere tempor ut bibendum lectus. Aenean sem purus, euismod ut fringilla ultricies, convallis a nulla.</p>
-</div>
-<!-- Generated by ai2html v0.89.0 - 2019-11-06 14:53 -->
-<!-- ai file: numberof.ai -->
-<style media="screen,print">#g-numberof-box .g-artboard {
-		margin:0 auto;
-	}
-	#g-numberof-box p {
-		margin:0;
-	}
-	.g-aiAbs {
-		position:absolute;
-	}
-	.g-aiImg {
-		display:block;
-		width:100% !important;
-	}
-	.g-aiSymbol {
-		position: absolute;
-		box-sizing: border-box;
-	}
-	.g-aiPointText p { white-space: nowrap; }
-	#g-numberof-medium {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-numberof-medium p {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:12px;
-		line-height:14px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:0.001em;
-		text-align:left;
-		color:rgb(44,51,49);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-numberof-medium .g-pstyle0 {
-		font-size:24px;
-		line-height:29px;
-		height:29px;
-		letter-spacing:0em;
-		color:rgb(121,162,148);
-	}
-	#g-numberof-medium .g-pstyle1 {
-		height:14px;
-	}
-	#g-numberof-medium .g-pstyle2 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-medium .g-pstyle3 {
-		font-size:26px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-medium .g-pstyle4 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-medium .g-pstyle5 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-medium .g-pstyle6 {
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-medium .g-pstyle7 {
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-medium .g-pstyle8 {
-		font-family:Open Sans;
-		font-weight:400;
-		font-style:italic;
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-medium .g-cstyle0 {
-		text-transform:uppercase;
-	}
-	#g-numberof-laptop {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-numberof-laptop p {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:12px;
-		line-height:14px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:0.001em;
-		text-align:left;
-		color:rgb(44,51,49);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-numberof-laptop .g-pstyle0 {
-		font-size:24px;
-		line-height:24px;
-		height:24px;
-		letter-spacing:0em;
-		color:rgb(121,162,148);
-	}
-	#g-numberof-laptop .g-pstyle1 {
-		height:14px;
-	}
-	#g-numberof-laptop .g-pstyle2 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-laptop .g-pstyle3 {
-		font-size:26px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-laptop .g-pstyle4 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-laptop .g-pstyle5 {
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-laptop .g-pstyle6 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-laptop .g-pstyle7 {
-		font-family:Open Sans;
-		font-weight:400;
-		font-style:italic;
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-laptop .g-pstyle8 {
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-laptop .g-cstyle0 {
-		text-transform:uppercase;
-	}
-	#g-numberof-mobile {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-numberof-mobile p {
-		font-family:Open Sans Condensed;
-		font-weight:700;
-		font-size:12px;
-		line-height:14px;
-		height:auto;
-		filter:alpha(opacity=100);
-		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-		opacity:1;
-		letter-spacing:0.001em;
-		text-align:left;
-		color:rgb(44,51,49);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-numberof-mobile .g-pstyle0 {
-		font-size:24px;
-		line-height:24px;
-		height:24px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(121,162,148);
-	}
-	#g-numberof-mobile .g-pstyle1 {
-		height:14px;
-		text-align:center;
-	}
-	#g-numberof-mobile .g-pstyle2 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:10px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-mobile .g-pstyle3 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:9px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle4 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:10px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:center;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-mobile .g-pstyle5 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:9px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:center;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle6 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-mobile .g-pstyle7 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:-0.05em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle8 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:6px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle9 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:10px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		color:rgb(121,162,147);
-	}
-	#g-numberof-mobile .g-pstyle10 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:8px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle11 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:7px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.1em;
-		text-align:right;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle12 {
-		font-family:Open Sans;
-		font-weight:300;
-		font-size:10px;
-		line-height:7px;
-		height:7px;
-		letter-spacing:-0.075em;
-		text-align:right;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-mobile .g-pstyle13 {
-		font-size:26px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-mobile .g-pstyle14 {
-		font-size:9px;
-		line-height:11px;
-		height:11px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle15 {
-		font-size:10px;
-		line-height:12px;
-		height:12px;
-		letter-spacing:0em;
-		text-align:center;
-		color:rgb(45,51,49);
-	}
-	#g-numberof-mobile .g-pstyle16 {
-		font-family:Open Sans;
-		font-weight:400;
-		font-style:italic;
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-mobile .g-pstyle17 {
-		font-size:8px;
-		line-height:10px;
-		height:10px;
-		letter-spacing:-0.01em;
-		text-align:right;
-		text-transform:uppercase;
-		color:rgb(191,144,151);
-	}
-	#g-numberof-mobile .g-cstyle0 {
-		text-transform:uppercase;
-	}</style>
-
-<div id="g-numberof-box" class="ai2html">
-
-	<!-- Artboard: medium -->
-	<div id="g-numberof-medium" class="g-artboard" style="width:620px; height:450.000000000001px;" data-aspect-ratio="1.378" data-min-width="620">
-		<img id="g-numberof-medium-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-medium.2d8f447f.png">
-		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.8338%;margin-top:-16.3px;left:3.8073%;width:591px;">
-			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT COLLEGES & UNIVERSITIES</p>
-		</div>
-		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.2391%;margin-top:-15.1px;left:3.8177%;width:616px;">
-			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but only 161 recieve money from other countries. </p>
-			<p class="g-pstyle1">These are the 10 countries that gave the most money, along with the number of institutions they gave money to.  </p>
-		</div>
-		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.4956%;margin-top:-6.7px;left:24.7096%;width:60px;">
-			<p class="g-pstyle2">1 university</p>
-		</div>
-		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:26.1542%;margin-top:-5.7px;left:23.9026%;margin-left:-24px;width:48px;">
-			<p class="g-pstyle3">]</p>
-		</div>
-		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.0756%;margin-top:-6.8px;right:85.1155%;width:41px;">
-			<p class="g-pstyle4">CHINA</p>
-		</div>
-		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.1867%;margin-top:-6.8px;right:38.4419%;width:63px;">
-			<p class="g-pstyle5">$680,273,016</p>
-		</div>
-		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.1681%;margin-top:-6.3px;right:84.9928%;width:59px;">
-			<p class="g-pstyle6">87 COLLEGES</p>
-		</div>
-		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.4089%;margin-top:-6.8px;right:85.3876%;width:51px;">
-			<p class="g-pstyle4">ENGLAND</p>
-		</div>
-		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.7423%;margin-top:-6.8px;right:25.7654%;width:63px;">
-			<p class="g-pstyle5">$936,468,499</p>
-		</div>
-		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.5013%;margin-top:-6.3px;right:85.3597%;width:29px;">
-			<p class="g-pstyle6">81</p>
-		</div>
-		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.2977%;margin-top:-6.8px;right:85.3863%;width:47px;">
-			<p class="g-pstyle4">CANADA</p>
-		</div>
-		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.2979%;margin-top:-6.8px;right:85.4797%;width:29px;">
-			<p class="g-pstyle5">76</p>
-		</div>
-		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.2979%;margin-top:-6.8px;right:47.6857%;width:63px;">
-			<p class="g-pstyle5">$511,016,461</p>
-		</div>
-		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.4089%;margin-top:-6.8px;right:85.3815%;width:42px;">
-			<p class="g-pstyle4">JAPAN</p>
-		</div>
-		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.8533%;margin-top:-6.8px;right:85.4797%;width:29px;">
-			<p class="g-pstyle5">74</p>
-		</div>
-		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.8533%;margin-top:-6.8px;right:51.4893%;width:63px;">
-			<p class="g-pstyle5">$447,932,424</p>
-		</div>
-		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.8534%;margin-top:-6.8px;right:85.0629%;width:65px;">
-			<p class="g-pstyle4">SWITZERLAND</p>
-		</div>
-		<div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.52%;margin-top:-6.8px;right:53.3059%;width:63px;">
-			<p class="g-pstyle5">$421,080,365</p>
-		</div>
-		<div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.0755%;margin-top:-6.8px;right:85.4798%;width:29px;">
-			<p class="g-pstyle5">63</p>
-		</div>
-		<div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.2977%;margin-top:-6.8px;right:85.4605%;width:65px;">
-			<p class="g-pstyle4">SAUDI ARABIA</p>
-		</div>
-		<div id="g-ai0-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.0755%;margin-top:-6.8px;right:85.4798%;width:29px;">
-			<p class="g-pstyle5">63</p>
-		</div>
-		<div id="g-ai0-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.0755%;margin-top:-6.8px;right:41.367%;width:63px;">
-			<p class="g-pstyle5">$649,971,586</p>
-		</div>
-		<div id="g-ai0-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.6311%;margin-top:-6.8px;right:85.3847%;width:39px;">
-			<p class="g-pstyle4">INDIA</p>
-		</div>
-		<div id="g-ai0-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.1866%;margin-top:-6.8px;right:53.345%;width:63px;">
-			<p class="g-pstyle5">$428,598,388</p>
-		</div>
-		<div id="g-ai0-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.8533%;margin-top:-6.8px;right:85.4799%;width:29px;">
-			<p class="g-pstyle5">46</p>
-		</div>
-		<div id="g-ai0-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.9645%;margin-top:-6.8px;right:85.1637%;width:58px;">
-			<p class="g-pstyle4">HONG KONG</p>
-		</div>
-		<div id="g-ai0-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.2977%;margin-top:-6.8px;right:44.4959%;width:63px;">
-			<p class="g-pstyle5">$583,104,614</p>
-		</div>
-		<div id="g-ai0-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.1866%;margin-top:-6.8px;right:85.4797%;width:29px;">
-			<p class="g-pstyle5">46</p>
-		</div>
-		<div id="g-ai0-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.5201%;margin-top:-6.8px;right:6.7633%;width:68px;">
-			<p class="g-pstyle5">$1,478,676,069</p>
-		</div>
-		<div id="g-ai0-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.2979%;margin-top:-6.8px;right:85.3897%;width:41px;">
-			<p class="g-pstyle4">QATAR</p>
-		</div>
-		<div id="g-ai0-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.2979%;margin-top:-6.8px;right:85.4798%;width:29px;">
-			<p class="g-pstyle5">28</p>
-		</div>
-		<div id="g-ai0-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.409%;margin-top:-6.8px;right:85.4494%;width:52px;">
-			<p class="g-pstyle4">BERMUDA</p>
-		</div>
-		<div id="g-ai0-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6311%;margin-top:-6.8px;right:30.0766%;width:63px;">
-			<p class="g-pstyle5">$812,426,114</p>
-		</div>
-		<div id="g-ai0-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6311%;margin-top:-6.8px;right:85.4799%;width:29px;">
-			<p class="g-pstyle5">17</p>
-		</div>
-		<div id="g-ai0-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.4631%;margin-top:-5.6px;right:0.4273%;width:69px;">
-			<p class="g-pstyle7">Humera lodhi</p>
-		</div>
-		<div id="g-ai0-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.2222%;margin-top:-5.5px;right:0.4828%;width:151px;">
-			<p class="g-pstyle8"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
-		</div>
-	</div>
-
-	<!-- Artboard: laptop -->
-	<div id="g-numberof-laptop" class="g-artboard" style="width:490px; height:443px;" data-aspect-ratio="1.106" data-min-width="490" data-max-width="619">
-		<img id="g-numberof-laptop-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-laptop.0ac1d6d4.png">
-		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:11.005%;margin-top:-25.8px;left:4.9275%;width:446px;">
-			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT COLLEGES </p>
-			<p class="g-pstyle0">& UNIVERSITIES</p>
-		</div>
-		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.8298%;margin-top:-22.3px;left:4.9406%;width:457px;">
-			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but only 161 recieve </p>
-			<p class="g-pstyle1">money from other countries. These are the 10 countries that gave the most money, </p>
-			<p class="g-pstyle1">along with the number of institutions they gave money to.  </p>
-		</div>
-		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:27.4786%;margin-top:-6.7px;left:29.1081%;width:60px;">
-			<p class="g-pstyle2">1 university</p>
-		</div>
-		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:30.4049%;margin-top:-5.7px;left:28.0869%;margin-left:-24px;width:48px;">
-			<p class="g-pstyle3">]</p>
-		</div>
-		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.3724%;margin-top:-6.8px;right:79.6279%;width:41px;">
-			<p class="g-pstyle4">CHINA</p>
-		</div>
-		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.355%;margin-top:-6.2px;right:31.996%;width:54px;">
-			<p class="g-pstyle5">$680,273,016</p>
-		</div>
-		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.2722%;margin-top:-6.3px;right:79.4727%;width:59px;">
-			<p class="g-pstyle5">87 COLLEGES</p>
-		</div>
-		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.2416%;margin-top:-6.8px;right:80.3805%;width:51px;">
-			<p class="g-pstyle4">ENGLAND</p>
-		</div>
-		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.3528%;margin-top:-6.2px;right:20.4594%;width:54px;">
-			<p class="g-pstyle5">$936,468,499</p>
-		</div>
-		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.367%;margin-top:-6.3px;right:80.345%;width:29px;">
-			<p class="g-pstyle5">81</p>
-		</div>
-		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.465%;margin-top:-6.8px;right:80.3787%;width:47px;">
-			<p class="g-pstyle4">CANADA</p>
-		</div>
-		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.1248%;margin-top:-6.2px;right:42.5917%;width:54px;">
-			<p class="g-pstyle5">$511,016,461</p>
-		</div>
-		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.4966%;margin-top:-6.8px;right:80.4971%;width:29px;">
-			<p class="g-pstyle6">76</p>
-		</div>
-		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.6885%;margin-top:-6.8px;right:80.3727%;width:42px;">
-			<p class="g-pstyle4">JAPAN</p>
-		</div>
-		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.8968%;margin-top:-6.2px;right:45.5265%;width:54px;">
-			<p class="g-pstyle5">$447,932,424</p>
-		</div>
-		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.9459%;margin-top:-6.8px;right:80.4969%;width:29px;">
-			<p class="g-pstyle6">74</p>
-		</div>
-		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.5576%;margin-top:-6.8px;right:79.7654%;width:65px;">
-			<p class="g-pstyle4">SWITZERLAND</p>
-		</div>
-		<div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.2174%;margin-top:-6.2px;right:47.0926%;width:54px;">
-			<p class="g-pstyle5">$421,080,365</p>
-		</div>
-		<div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.0406%;margin-top:-6.8px;right:80.293%;width:29px;">
-			<p class="g-pstyle6">63</p>
-		</div>
-		<div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.5553%;margin-top:-6.8px;right:79.6562%;width:65px;">
-			<p class="g-pstyle4">SAUDI ARABIA</p>
-		</div>
-		<div id="g-ai1-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:67.7636%;margin-top:-6.2px;right:36.479%;width:54px;">
-			<p class="g-pstyle5">$649,971,586</p>
-		</div>
-		<div id="g-ai1-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.5869%;margin-top:-6.8px;right:80.293%;width:29px;">
-			<p class="g-pstyle6">63</p>
-		</div>
-		<div id="g-ai1-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.1987%;margin-top:-6.8px;right:80.1728%;width:39px;">
-			<p class="g-pstyle4">INDIA</p>
-		</div>
-		<div id="g-ai1-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.0842%;margin-top:-6.2px;right:46.5183%;width:54px;">
-			<p class="g-pstyle5">$428,598,388</p>
-		</div>
-		<div id="g-ai1-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.1331%;margin-top:-6.8px;right:80.2932%;width:29px;">
-			<p class="g-pstyle6">46</p>
-		</div>
-		<div id="g-ai1-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.1964%;margin-top:-6.8px;right:79.4848%;width:58px;">
-			<p class="g-pstyle4">HONG KONG</p>
-		</div>
-		<div id="g-ai1-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.0819%;margin-top:-6.2px;right:38.7117%;width:54px;">
-			<p class="g-pstyle5">$583,104,614</p>
-		</div>
-		<div id="g-ai1-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.6794%;margin-top:-6.8px;right:79.6805%;width:29px;">
-			<p class="g-pstyle6">46</p>
-		</div>
-		<div id="g-ai1-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.662%;margin-top:-6.2px;right:3.9531%;width:58px;">
-			<p class="g-pstyle5">$1,478,676,069</p>
-		</div>
-		<div id="g-ai1-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.9685%;margin-top:-6.8px;right:79.5667%;width:41px;">
-			<p class="g-pstyle4">QATAR</p>
-		</div>
-		<div id="g-ai1-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:88.4514%;margin-top:-6.8px;right:79.6807%;width:29px;">
-			<p class="g-pstyle6">28</p>
-		</div>
-		<div id="g-ai1-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.7405%;margin-top:-6.8px;right:79.4382%;width:52px;">
-			<p class="g-pstyle4">BERMUDA</p>
-		</div>
-		<div id="g-ai1-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.1745%;margin-top:-6.2px;right:23.5957%;width:54px;">
-			<p class="g-pstyle5">$812,426,114</p>
-		</div>
-		<div id="g-ai1-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.9977%;margin-top:-6.8px;right:79.6807%;width:29px;">
-			<p class="g-pstyle6">17</p>
-		</div>
-		<div id="g-ai1-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:98.9842%;margin-top:-5.5px;right:61.0842%;width:151px;">
-			<p class="g-pstyle7"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
-		</div>
-		<div id="g-ai1-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.0032%;margin-top:-5.6px;right:87.4972%;width:77px;">
-			<p class="g-pstyle8">Humera lodhi | </p>
-		</div>
-	</div>
-
-	<!-- Artboard: mobile -->
-	<div id="g-numberof-mobile" class="g-artboard" style="width:375px; height:606.799999999999px;" data-aspect-ratio="0.618" data-min-width="375" data-max-width="489">
-		<img id="g-numberof-mobile-img" class="g-aiImg g-aiAbs" alt="" src="/numberof-mobile.0d1bff3b.png">
-		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.1879%;margin-top:-25.8px;left:49.6029%;margin-left:-173.5px;width:347px;">
-			<p class="g-pstyle0">COUNTRIES GIVE MONEY TO SELECT</p>
-			<p class="g-pstyle0">COLLEGES & UNIVERSITIES</p>
-		</div>
-		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.0415%;margin-top:-29.5px;left:47.3198%;margin-left:-182px;width:364px;">
-			<p class="g-pstyle1">There are 5,300 colleges and universities in the United States, but </p>
-			<p class="g-pstyle1">only 161 recieve money from other countries. These are the 10 </p>
-			<p class="g-pstyle1">countries that gave the most money, along with the number of </p>
-			<p class="g-pstyle1">institutions they gave money to.  </p>
-		</div>
-		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.0372%;margin-top:-4.1px;right:18.6805%;width:49px;">
-			<p class="g-pstyle2">QATAR</p>
-		</div>
-		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.5001%;margin-top:-4px;right:16.2604%;width:65px;">
-			<p class="g-pstyle3">$1,478,676,069</p>
-		</div>
-		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.0867%;margin-top:-4.1px;right:71.3682%;width:61px;">
-			<p class="g-pstyle2">ENGLAND</p>
-		</div>
-		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.5495%;margin-top:-4px;right:71.6698%;width:60px;">
-			<p class="g-pstyle3">$936,468,499</p>
-		</div>
-		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:56.7122%;margin-top:-4.1px;left:88.4815%;margin-left:-31.5px;width:63px;">
-			<p class="g-pstyle4">BERMUDA</p>
-		</div>
-		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.5047%;margin-top:-4px;left:88.8911%;margin-left:-30.5px;width:61px;">
-			<p class="g-pstyle5">$812,426,114</p>
-		</div>
-		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.7162%;margin-top:-6.6px;right:82.5208%;width:47px;">
-			<p class="g-pstyle6">CHINA</p>
-		</div>
-		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.9522%;margin-top:-4.1px;right:40.1844%;width:75px;">
-			<p class="g-pstyle2">SAUDI ARABIA</p>
-		</div>
-		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.4262%;margin-top:-6px;right:82.6534%;width:65px;">
-			<p class="g-pstyle7">$680,273,016</p>
-		</div>
-		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.5798%;margin-top:-4px;right:41.9073%;width:60px;">
-			<p class="g-pstyle3">$649,971,586</p>
-		</div>
-		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.0834%;margin-top:-4.1px;right:26.1391%;width:73px;">
-			<p class="g-pstyle2">HONG KONG</p>
-		</div>
-		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.4018%;margin-top:-4.1px;right:64.1039%;width:55px;">
-			<p class="g-pstyle2">CANADA</p>
-		</div>
-		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.5462%;margin-top:-4px;right:25.9698%;width:61px;">
-			<p class="g-pstyle3">$583,104,614</p>
-		</div>
-		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.6786%;margin-top:-3.9px;right:65.0565%;width:48px;">
-			<p class="g-pstyle8">$511,016,461</p>
-		</div>
-		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.5441%;margin-top:-4.1px;left:35.9427%;width:45px;">
-			<p class="g-pstyle9">JAPAN</p>
-		</div>
-		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.821%;margin-top:-3.9px;right:57.7115%;width:48px;">
-			<p class="g-pstyle8">$447,932,424</p>
-		</div>
-		<div id="g-ai2-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.7577%;margin-top:-7.6px;right:49.1503%;width:55px;">
-			<p class="g-pstyle2">SWITZER</p>
-			<p class="g-pstyle2">LAND</p>
-		</div>
-		<div id="g-ai2-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.8401%;margin-top:-4.1px;right:35.318%;width:43px;">
-			<p class="g-pstyle2">INDIA</p>
-		</div>
-		<div id="g-ai2-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.1378%;margin-top:-4px;right:33.4578%;width:56px;">
-			<p class="g-pstyle10">$428,598,388</p>
-		</div>
-		<div id="g-ai2-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.6219%;margin-top:-3.9px;right:49.2242%;width:52px;">
-			<p class="g-pstyle11">$421,080,365</p>
-		</div>
-		<div id="g-ai2-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9753%;margin-top:-7.6px;right:89.7536%;width:52px;">
-			<p class="g-pstyle12">1 </p>
-			<p class="g-pstyle12">university</p>
-		</div>
-		<div id="g-ai2-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="transform: matrix(-1,0.0078,-0.0078,-1,0,0);transform-origin: 50% 58.7814081125118%;-webkit-transform: matrix(-1,0.0078,-0.0078,-1,0,0);-webkit-transform-origin: 50% 58.7814081125118%;-ms-transform: matrix(-1,0.0078,-0.0078,-1,0,0);-ms-transform-origin: 50% 58.7814081125118%;top:88.2818%;margin-top:-5.7px;left:11.4682%;margin-left:-24px;width:48px;">
-			<p class="g-pstyle13">]</p>
-		</div>
-		<div id="g-ai2-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.8675%;margin-top:-11.7px;left:14.7286%;margin-left:-26px;width:52px;">
-			<p class="g-pstyle14">87</p>
-			<p class="g-pstyle14"> COLLEGES</p>
-		</div>
-		<div id="g-ai2-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:31.6096%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">76</p>
-		</div>
-		<div id="g-ai2-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:39.1443%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">74</p>
-		</div>
-		<div id="g-ai2-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:47.1807%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">63</p>
-		</div>
-		<div id="g-ai2-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:54.5388%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">63</p>
-		</div>
-		<div id="g-ai2-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:62.6323%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">46</p>
-		</div>
-		<div id="g-ai2-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2387%;margin-top:-6.8px;left:70.3104%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">46</p>
-		</div>
-		<div id="g-ai2-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:77.9466%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">28</p>
-		</div>
-		<div id="g-ai2-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.2386%;margin-top:-6.8px;left:85.4729%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle15">17</p>
-		</div>
-		<div id="g-ai2-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.1424%;margin-top:-6.3px;left:23.4365%;margin-left:-14.5px;width:29px;">
-			<p class="g-pstyle14">81</p>
-		</div>
-		<div id="g-ai2-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.1266%;margin-top:-5.5px;right:0.8753%;width:151px;">
-			<p class="g-pstyle16"><span class="g-cstyle0">S</span>ource<span class="g-cstyle0">: u.s. d</span>epartment of Education</p>
-		</div>
-		<div id="g-ai2-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:99.1404%;margin-top:-5.6px;right:35.1216%;width:77px;">
-			<p class="g-pstyle17">Humera lodhi | </p>
-		</div>
-	</div>
-
-</div>
-
-<!-- End ai2html - 2019-11-06 14:53 -->
-<div class="story-body">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit tincidunt dapibus interdum, dui ligula tincidunt arcu, sed euismod lorem lacus quis metus. Aliquam non feugiat mi. Nam dictum arcu at magna sollicitudin tristique.</p>
-  <p>Quisque commodo, orci a varius rhoncus, diam magna consectetur lectus, tincidunt consectetur lectus ipsum vel leo. Mauris in augue eu ex euismod facilisis ac quis ipsum.</p>
-  <!-- If you use images, the path is just images/___ -->
-  
-  <p>Phasellus lacus lectus, semper ut mollis vitae, fermentum ac massa. Duis pulvinar, lorem non interdum bibendum, sapien tellus volutpat massa, mollis sodales lectus ligula eget ex. Donec hendrerit imperdiet commodo. Fusce ut leo sed purus posuere tempor ut bibendum lectus. Aenean sem purus, euismod ut fringilla ultricies, convallis a nulla.</p>
-</div><!-- 
+<!-- 
   If you want to use something exported from ai2html...
     1. Rename the exported .html file to .hbs
     2. Put the .hbs file inside of 'html/story'
@@ -2611,9 +2616,10 @@ analytics": ""
 
     <div class="footer">
         &copy; <a href=""></a> 2019
-    </div>  
+    </div>  </main>
 
   <!-- We'll always keep this JS file around -->
   <script src="/ai2html-resizer.3f82c282.js"></script>
 
-
+</body>
+</html>

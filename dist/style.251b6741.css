@@ -8,6 +8,7 @@
 
 }
 
+
 body {
     margin:auto;
     padding:50px 10px 50px 10px;
@@ -40,10 +41,12 @@ img {
     color: #56605D;
     /*;*/
 }
-.navy-theme {
-    background-color: #343D4C;
-    color: #EDF7F4;
-    /*;*/
+.darkest-theme {
+    background-color: #000000;
+    color: #fbfbfb;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+
 }
 
 .header {

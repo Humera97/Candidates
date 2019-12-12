@@ -8,3 +8,6 @@ Both of these data sources exist, and I have applied to get access to the Twitte
 
 ## Data Visualization
 I have a few different data visuals in mind, although I am not sure the final product will include all of my idea. I'm hoping my overall story will be a responsive project with Scrollytelling and elements of interactivy dispersed throughout. 
+
+graphicsp1.png
+graphicsp2.png
